@@ -14,18 +14,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+
+.navMainMenu {
+  width: 100% !important;
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +40,72 @@
     transform: rotate(360deg);
   }
 }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  gap: 15px;
+  vertical-align: center;
+  margin-top: 275px;
+
+}
+
+.button {
+  background-color: dimgrey;
+}
+
+.picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+body  {
+  /*background-image: url("Golf.png");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-top: 175px;
+  width: 60% !important;
+  vertical-align: central;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: dimgrey;
+
+}
+
+td, th {
+  border: 5px solid black;
+  width: 100% !important;
+  color: white;
+  font-size: 15px;
+  text-shadow: 4px 4px 5px #000000;
+  text-align: center;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+  /*background-color: ;*/
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bg-dark {
+  width: 100% !important;
+}
+
