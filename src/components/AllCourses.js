@@ -1,78 +1,90 @@
-import React, {useEffect, useState,} from 'react';
+import React from 'react'
+import '../App.css'
 import {
-    Button
+    Container,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    Typography
 } from '@mui/material'
+import {
+    Link,
+    useParams
+} from 'react-router-dom'
+import DeleteIcon from "@mui/icons-material/Delete";
+import AddCourse from '../containers/AddCourse'
+
+const AllCourses = (props) => {
+    const {id} = useParams();
+
+    const course = props.courses.find((course) => course.id === +id);
+    console.log(course);
+    console.log('Currently online: ', props.online)
 
 
+    return (
+        <div className="main-listings">
+            {props.online && (
+                <AddCourse
+                    courses = {props.courses}
+                />
+            )}
 
-function AllCourses() {
+            <Container>
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Name</TableCell>
+                            <TableCell>Description</TableCell>
+                            <TableCell>Address</TableCell>
+                            <TableCell>Hours</TableCell>
+                            {
+                                props.online && (
+                                    <TableCell>
+                                        Delete
+                                    </TableCell>
+                                )
+                            }
 
-    const [state, setState] = useState({
-        courseName: ''
-    })
-
-
-    useEffect(() => {
-        // GET Request for Courses
-        fetch('http://localhost:8080/courses')
-            .then((response) => {
-                console.log('Courses response:', response)
-                return response.json()
-
-            }).then((data) => {
-            console.log('Course Data 1:', data)
-        })
-    }, [])
-
-    const handleChange = (e) => {
-        const {name, value} = e.target;
-        setState((prevState) => {
-            return {
-                ...prevState,
-                [name]: value,
-            };
-        });
-    };
-
-
-    function addCourseHandler() {
-        fetch(`http://localhost:8080/course`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(state),
-        }).then((response) => {
-            console.log('response:', response)
-            return response.json()
-
-        }).then((data) => {
-            console.log('Post Course by Id Data:', data)
-
-        })
-
-
-    }
-
-
-        return (
-            <section>
-
-                <form>
-                    <input name='courseName' value={state.courseName} onChange={handleChange}/>
-
-
-                    <br/>
-                    <Button onClick={function () {
-                        addCourseHandler()
-                    }}> Add New Course </Button>
-                </form>
-
-            </section>
-        )
-
-}
-
-
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {props.courses.map((courses, idx) => {
+                            // console.log('Listings inside Listing Prop: ', listings);
+                            return( <TableRow key={courses.id}>
+                                    <TableCell  scope="row" style={{color: 'white'}}>
+                                        <Typography>
+                                            <Link
+                                                to={`/CourseDetails/${courses.id}`}
+                                                component="button"
+                                                variant="header1"
+                                                style={{ color: 'white'}}>
+                                                {courses["name"] }
+                                            </Link>
+                                        </Typography>
+                                    </TableCell>
+                                    <TableCell  scope="row">{courses["description"]}</TableCell>
+                                    <TableCell  scope="row">{courses["address"]}</TableCell>
+                                    <TableCell  scope="row">{courses["hours"]}</TableCell>
+                                    {
+                                        props.online && (
+                                            <TableCell>
+                                                <DeleteIcon
+                                                    // add onClick method here
+                                                    onClick={() => props.removeCourse(courses.id)}
+                                                    className="icon text-red" />
+                                            </TableCell>
+                                        )
+                                    }
+                                </TableRow>
+                            )})}
+                    </TableBody>
+                </Table>
+            </Container>
+        </div>
+    );
+};
 
 export default AllCourses;

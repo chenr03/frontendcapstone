@@ -72,10 +72,13 @@ body {
   background-image: url("Golf.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
   /*object-fit: contain;*/
 
 
 }
+
+
 
 .circle {
   position: absolute;
@@ -124,9 +127,6 @@ tr:nth-child(even) {
 }
 
 
-.header {
-  width: 100%;
-}
 
 .footer {
 
@@ -192,6 +192,113 @@ tr:nth-child(even) {
 main{
   width: 100%;
 }
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20vw;
+  margin: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.add-listing {
+  background: #4caf50 !important;
+  color: white !important;
+}
+
+.icon {
+  font-size: medium !important;
+}
+
+.icon:hover {
+  cursor: pointer
+}
+
+.text-gray {
+  color: gray
+}
+
+.text-red {
+  color: green
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin: auto 20px;
+}
+
+.listing-container {
+  margin: 50px;
+}
+
+.listing-paper {
+  padding: 50px;
+}
+
+.login {
+  margin-top: 100px;
+}
+
+/* Listing */
+.main-listings{
+  margin: 30px
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 50%;
+  gap: 15px;
+}
+
+.welcomeDashboard {
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  width: 100%;
+ justify-content: center;
+  position: absolute;
+
+
+
+}
+
+.App {
+  margin: 0;
+  width: 100% !important;
+
+}
+
+.header {
+  background-color: black;
+  font-size: 25px;
+  max-height: 2.4rem;
+}
+
 
 
 

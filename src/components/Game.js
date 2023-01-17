@@ -4,20 +4,20 @@ import {useParams} from 'react-router-dom'
 
 
 
-function User(){
+function Game(){
 
     const params = useParams();
     console.log('Params: ', params)
 
 
     useEffect(() => {
-        // Get Single User by id...
-        fetch(`http://localhost:8080/user/${params.id}`)
+        // Get Single Game by id...
+        fetch(`http://localhost:8080/game/${params.id}`)
             .then(response => {
-                console.log('User by id:', response)
+                console.log('Get Single Game by id:', response)
                 return response.json()
             }).then((data) => {
-            console.log('User by id Data:', data)
+            console.log('Get Single Game Data:', data)
         })
 
         // empty dependency array means this effect will only run once
@@ -36,4 +36,4 @@ function User(){
     )
 }
 
-export default User;
+export default Game;

@@ -1,16 +1,16 @@
 import React, {useEffect} from 'react';
 // import Button from '@mui/material/Button';
 
-function Games(){
+function AllGames(){
 
     useEffect(() => {
         fetch('http://localhost:8080/games')
             .then((response) => {
-                console.log('Games response:', response)
+                console.log('AllGames response:', response)
                 return response.json()
 
             }).then((data)=>{
-            console.log('Games Data:', data)
+            console.log('AllGames Data:', data)
         })
     }, [])
 
@@ -26,4 +26,4 @@ function Games(){
 }
 
 
-export default Games;
+export default AllGames;

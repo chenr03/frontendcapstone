@@ -67,7 +67,7 @@ class AddCourse extends Component {
                 </div>
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
-                        <DialogTitle>Add New Listing</DialogTitle>
+                        <DialogTitle>Add New Course</DialogTitle>
                         <DialogContent sx={{display: 'flex', justifyContent: 'center'}}>
                             <form
                                 onSubmit={this.handleSubmit}
