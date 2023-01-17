@@ -1,10 +1,7 @@
 import React from 'react'
 
 function Dashboard(props) {
-
-
-
-    console.log('Props Dashboard Comp: ', props)
+    // console.log('Props Dashboard Comp: ', props)
 return (
 
     <section>

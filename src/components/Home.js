@@ -9,30 +9,32 @@ function Home() {
 
 
     return(
-        <article>
-            <div>
+        <article className = "article-circle">
+            <div className = "circle"
+                 style={{
+                     backgroundColor: "#343a40",
+                     justifyContent: 'center',
+                     height: '400px',
+                     width: '400px',
+                     fontSize: '50px',
+                     color: 'whitesmoke',
+                     textShadow: '4px 4px 5px #000000',
+                     borderRadius: '50%',
+                     border: '5px double white'}}
+            >
                 <h1 style={{
-                    paddingRight: '50px',
-                    paddingLeft: '50px',
-                    paddingTop: '50px',
-                    paddingBottom: '50px',
-                    backgroundColor: "#343a40" ,
-                    fontSize: '3.7em',
-                    color: 'whitesmoke',
-                    textShadow: '4px 4px 5px #000000',
-                    textAlign: 'center',
-                    position: "relative",
-                    height: "auto",
-                    marginLeft: '40%',
-                    marginRight: "40%",
-                    marginTop: "15%",
-                    borderRadius: '60%',
-                    border: '5px double white'}}
+                    justifyContent: 'center',
+                    marginTop: '130px'
+                }}
                 > Welcome to Community Disc </h1>
 
-                <img src = {image}
-                     alt ="discGolfFlag"
-                     style ={{  width: '50px', marginLeft: '28%', marginRight: '80%', position: "absolute"}}/>
+
+            </div>
+
+            <div className = "golfFlagLogo">
+                 <img src = {image}
+                 alt ="discGolfFlag"
+                 style ={{  width: '50px', marginLeft: '50%', marginRight: '80%'}}/>
             </div>
         </article>
     );

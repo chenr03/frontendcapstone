@@ -1,11 +1,15 @@
+
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +17,20 @@
   }
 }
 
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*.App-header {*/
+/*  background-color: white;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
 
-}
+/*  font-size: calc(10px + 2vmin);*/
 
-.navMainMenu {
-  width: 100% !important;
-}
+/*}*/
+
+/*.navMainMenu {*/
+/*  width: 100% !important;*/
+/*}*/
 
 .App-link {
   color: white;
@@ -64,14 +68,28 @@
 
 }
 
-body  {
-  /*background-image: url("Golf.png");*/
+body {
+  background-image: url("Golf.png");
   background-size: cover;
   background-repeat: no-repeat;
+  /*object-fit: contain;*/
 
 
+}
 
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
 
+}
+
+.golfFlagLogo {
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, 50%)
 }
 
 
@@ -100,12 +118,80 @@ td, th {
 }
 
 tr:nth-child(even) {
-  /*background-color: ;*/
+
   font-size: 15px;
   font-weight: bold;
 }
 
-.bg-dark {
-  width: 100% !important;
+
+.header {
+  width: 100%;
 }
+
+.footer {
+
+}
+
+.container{
+  display:flex;
+  padding: 0;
+  margin: 0
+
+}
+
+.sidebar{
+  background-color: #343a40;
+  border: hidden;
+  color: #fff;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.3s;
+
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+  margin-left: 15px;
+
+}
+
+/*.logoLogo {*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*}*/
+
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background: gainsboro;
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: gainsboro;
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+
+main{
+  width: 100%;
+}
+
+
 

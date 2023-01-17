@@ -58,7 +58,6 @@ const Login = (props) => {
             console.log('Data:', data)
             document.cookie = "loggedin=true;max-age=60*1000";
             document.cookie = `token=${data};max-age=60*1000`;
-
         })
         // POST REQUEST FOR USERS
 
