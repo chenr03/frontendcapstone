@@ -12,6 +12,21 @@ export const login = (username) => {
 //     }
 // }
 
+export const addCourse = (course) => {
+    return {
+        type: 'ADD_COURSE',
+        value: course
+    }
+}
+
+export const removeCourse = (id) => {
+    return {
+        type: 'REMOVE_COURSE',
+        value: id
+    }
+}
+
+
 export const register = () => {
     return {
         type: 'REGISTER'
