@@ -5,46 +5,6 @@
   text-decoration: none;
 }
 
-
-.App {
-  text-align: center;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/*.App-header {*/
-/*  background-color: white;*/
-/*  min-height: 100vh;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-
-/*  font-size: calc(10px + 2vmin);*/
-
-/*}*/
-
-/*.navMainMenu {*/
-/*  width: 100% !important;*/
-/*}*/
-
-.App-link {
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .login-form {
   display: flex;
   flex-direction: column;
@@ -88,12 +48,12 @@ body {
 
 }
 
-.golfFlagLogo {
-  position: absolute;
-  left: 75%;
-  top: 50%;
-  transform: translate(-50%, 50%)
-}
+/*.golfFlagLogo {*/
+/*  position: absolute;*/
+/*  left: 75%;*/
+/*  top: 50%;*/
+/*  transform: translate(-50%, 50%)*/
+/*}*/
 
 
 
@@ -133,9 +93,10 @@ tr:nth-child(even) {
 }
 
 .container{
-  display:flex;
+  display: grid;
   padding: 0;
-  margin: 0
+  margin: 0;
+
 
 }
 
@@ -158,11 +119,6 @@ tr:nth-child(even) {
   margin-left: 15px;
 
 }
-
-/*.logoLogo {*/
-/*  width: 100px;*/
-/*  height: 100px;*/
-/*}*/
 
 .bars{
   display: flex;
@@ -219,7 +175,7 @@ ul {
   margin: 50px 0;
 }
 
-.add-listing {
+.add-course {
   background: #4caf50 !important;
   color: white !important;
 }
@@ -280,7 +236,7 @@ ul {
   font-size: 25px;
   background-color: black;
   width: 100%;
- justify-content: center;
+ /*justify-content: center;*/
   position: absolute;
 
 
@@ -289,7 +245,7 @@ ul {
 
 .App {
   margin: 0;
-  width: 100% !important;
+  padding: 0;
 
 }
 
@@ -299,6 +255,52 @@ ul {
   max-height: 2.4rem;
 }
 
+/*.content {*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*}*/
+
+/*::-webkit-scrollbar {*/
+/*  width: 10px;*/
+/*}*/
+
+/*!* Track *!*/
+/*::-webkit-scrollbar-track {*/
+/*  background: #e0e0e0; ;*/
+/*}*/
+/*!* Handle *!*/
+/*::-webkit-scrollbar-thumb {*/
+/*  background: #888;*/
+/*}*/
+/*!* Handle on Hover *!*/
+/*::-webkit-scrollbar-track:hover {*/
+/*  background: #555;*/
+/*}*/
 
 
+/* About Page CSS */
 
+/*.aboutPage {*/
+/*  border: 5px solid black;*/
+
+/*}*/
+
+/*.aboutContainer {*/
+/*  !*border: 5px solid black;*!*/
+/*}*/
+
+/*.aboutHeader {*/
+/*!*  border: 5px solid black;*!*/
+/*}*/
+
+/*.icon-text-red {*/
+/*  color: red;*/
+/*}*/
+
+/*.MuiTableCell-root {*/
+/*  color: white;*/
+/*}*/
+
+.MuiTable-root {
+  margin-bottom: 300px;
+}

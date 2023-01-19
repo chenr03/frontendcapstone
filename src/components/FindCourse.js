@@ -60,7 +60,7 @@ const Courses = (props) => {
                                     <DeleteIcon
                                         // add onClick method here
                                         onClick={() => props.removeCourse(idx)}
-                                        className="icon text-red" />
+                                        className="icon-text-red" />
 
                                 </TableRow>
                             )})}

@@ -84,7 +84,6 @@ const Login = (props) => {
 
     return (
         <ThemeProvider theme={theme}>
-        <div className="App">
             <Container maxWidth="sm">
                 <form className="login-form"
                       onSubmit={login}
@@ -120,7 +119,6 @@ const Login = (props) => {
                     </Button>
                 </form>
             </Container>
-        </div>
         </ThemeProvider>
     );
 };

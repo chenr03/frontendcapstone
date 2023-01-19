@@ -58,11 +58,24 @@ class AddCourse extends Component {
 
                     <Button
                         variant="contained"
-                        className="add-listing"
+                        className="add-course"
                         onClick={this.toggleDialog}
-                        sx={{backgroundColor: 'grey', marginBottom: '20px'}}
+                        sx={{
+                            backgroundColor: 'grey',
+                            border: '5px double white',
+                            left: '43%',
+                            marginLeft: '-50px',
+                            top: '43%',
+                            marginTop: '-50px',
+                            height: '300px',
+                            width: '500px',
+                            position: 'absolute',
+                            fontSize: '40px'
+
+                    }}
                     >
                         Add New Course
+
                     </Button>
                 </div>
                 <div>
@@ -102,8 +115,6 @@ class AddCourse extends Component {
                         </DialogContent>
                         <Map name={this.state.name}
                              address={this.state.address}
-
-
                         />
                     </Dialog>
                 </div>

@@ -51,8 +51,8 @@ const AllCourses = (props) => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {props.courses.map((courses, idx) => {
-                            // console.log('Listings inside Listing Prop: ', listings);
+                        {props.courses.map((courses, ) => {
+
                             return( <TableRow key={courses.id}>
                                     <TableCell  scope="row" style={{color: 'white'}}>
                                         <Typography>
@@ -79,7 +79,8 @@ const AllCourses = (props) => {
                                         )
                                     }
                                 </TableRow>
-                            )})}
+                            )}
+                        )}
                     </TableBody>
                 </Table>
             </Container>
