@@ -12,8 +12,8 @@ return (
         <header className = "welcomeDashboard" style={{textAlign: 'center'}}>
             Welcome to Community Disc {props.user} !
         </header>
-        <div className = "dashboardHeader" style={{border: '5px solid red', flexDirection: 'row', textAlign: 'center' }}>
-            <h1 >
+        <div className = "dashboardHeader" style={{border: '5px none red', flexDirection: 'row', textAlign: 'center', height: '300px' }}>
+            <h1 className = "dashboardText">
                 Dashboard
             </h1>
         </div>

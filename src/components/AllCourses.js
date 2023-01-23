@@ -51,7 +51,7 @@ const AllCourses = (props) => {
                 <Table>
                     <TableHead>
                         <TableRow>
-                            <TableCell style={{color: 'white', fontWeight: 'Bolder', fontSize: '20px', textDecoration: 'underline'}}>Name </TableCell>
+                            <TableCell style={{color: '#343a40', fontWeight: 'Bolder', fontSize: '20px', textDecoration: 'underline'}}>Name </TableCell>
 
                             {
                                 props.online && (
@@ -72,7 +72,7 @@ const AllCourses = (props) => {
                                                 to={`/CourseDetails/${courses.id}`}
                                                 component="button"
                                                 variant="header1"
-                                                style={{ color: 'white'}}>
+                                                style={{ color: '#343a40'}}>
                                                 {courses["courseName"] }
                                             </Link>
                                         </Typography>

@@ -86,19 +86,18 @@ const Register = (props) => {
                 <Container maxWidth="lg">
                     <form className="login-form"
                           onSubmit={register}
-                          style = {{padding: '20px',
+                          style = {{padding: '10px',
                               backgroundColor: 'antiquewhite',
-                              borderColor: 'black',
                               textAlign: 'center',
                               border: '5px inset',
                               marginTop: '33%',
-                              marginLeft: '25%'
 
 
 
                           }}  >
                         <h4 style={{textAlign: 'center'}}> Community Disc Registration </h4>
                         <TextField
+                            style={{marginLeft: '325px'}}
                             required
                             onChange={handleTextChange}
                             value={state.username}
@@ -107,6 +106,7 @@ const Register = (props) => {
                             type="text"
                         />
                         <TextField
+                            style={{marginLeft: '10px'}}
                             required
                             onChange={handleTextChange}
                             value={state.password}
@@ -115,7 +115,7 @@ const Register = (props) => {
                             type="password"
                         />
                         <Button
-                            style={{background: 'grey', textAlign: 'center'}}
+                            style={{background: 'grey', marginLeft: '25px', marginRight: '200px'}}
                             type="submit"
                             className="login-button"
                             variant="contained"
@@ -123,8 +123,9 @@ const Register = (props) => {
                         >
                             Register
                         </Button>
-                       <Link style={{textAlign: 'center'}}> Forgot Username ? </Link>
-                        <Link style={{textAlign: 'center'}}> Forgot Password ? </Link>
+
+                            <Link className = "forgotUsername" style={{paddingTop: '10px'}}> Forgot Username ? </Link>
+                            <Link clssName = "forgotPassword" style={{textAlign: 'center'}}> Forgot Password ? </Link>
                     </form>
                 </Container>
         </ThemeProvider>

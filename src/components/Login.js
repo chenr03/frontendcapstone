@@ -89,12 +89,12 @@ const Login = (props) => {
 
                 <form className="login-form"
                       onSubmit={login}
-                      style = {{padding: '20px',
+                      style = {{padding: '10px',
                                 backgroundColor: 'antiquewhite',
                                 borderColor: 'black',
                                 border: '5px inset',
                                 marginTop: '33%',
-                                marginLeft: '25%'
+
 
 
 
@@ -104,6 +104,7 @@ const Login = (props) => {
                     <p style={{textAlign: 'center'}}> Please enter your Login & Password </p>
 
                     <TextField
+                        style={{textAlign: 'center', marginLeft: '320px', paddingBottom: '10px'}}
                         required
                         onChange={handleTextChange}
                         value={state.username}
@@ -112,6 +113,7 @@ const Login = (props) => {
                         type="text"
                     />
                     <TextField
+                        style={{textAlign: 'center', marginLeft: '10px'}}
                         required
                         onChange={handleTextChange}
                         value={state.password}
@@ -120,7 +122,7 @@ const Login = (props) => {
                         type="password"
                     />
                     <Button
-                        style={{background: 'grey'}}
+                        style={{background: 'grey', marginLeft: '25px'}}
                         type="submit"
                         className="login-button"
                         variant="contained"

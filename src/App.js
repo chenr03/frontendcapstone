@@ -71,6 +71,7 @@ function App() {
                         </Routes>
                     </Sidebar>
                 </header>
+                <footer className="footer"></footer>
             </main>
         </Router>
   </Provider>

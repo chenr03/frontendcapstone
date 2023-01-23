@@ -31,8 +31,18 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
 
+}
+
+.welcomeHeader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .golfFlagLogo {
@@ -48,22 +58,22 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   margin-top: 175px;
-  width: 60% !important;
+  width: 50% !important;
   vertical-align: central;
   margin-left: 25%;
   margin-right: 25%;
-  background-color: dimgrey;
+  background-color: antiquewhite;
 
 }
 
 td, th {
-  border: 5px solid black;
+  border: 5px solid #343a40;
   width: 100% !important;
-  color: white;
+  color: black;
   font-size: 15px;
-  text-shadow: 4px 4px 5px #000000;
   text-align: center;
   padding: 8px;
+
 
 }
 
@@ -79,6 +89,8 @@ tr:nth-child(even) {
   padding: 0;
   margin: 0;
   width: 100vw;
+  height: 100vh;
+
 
 
 }
@@ -207,6 +219,7 @@ ul {
   text-align: center;
   align-items: center;
   justify-content: center;
+
 }
 
 .dashboardSection {
@@ -218,13 +231,19 @@ ul {
 .welcomeDashboard {
   color: white;
   font-size: 25px;
-  background-color: black;
+  background-color: #343a40;
   width: 100%;
   justify-content: center;
 
+}
 
+.dashboardText {
+  font-size: 75px;
+  height: 100vh;
+}
 
-
+.dashboardHeader {
+  background: #4caf50;
 }
 
 .App {
@@ -234,9 +253,39 @@ ul {
 }
 
 .header {
-  background-color: black;
+  background-color: #343a40;
   font-size: 25px;
   max-height: 2.4rem;
+}
+
+.aboutSection {
+  justify-content: center;
+  text-align: center;
+  margin: 90px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  background-color: #343a40;
+  border: 5px double white;
+  border-radius: 50%;
+  font-size: 20px;
+
+}
+
+.introduction-section {
+  margin-top: 100px;
+}
+
+
+
+.footer{
+  margin-top: 1rem;
+  padding: 1.3rem;
+  background-color: #343a40;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 
