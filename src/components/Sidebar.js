@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaPeopleArrows, FaPager, FaHome, FaGrinStars }from "react-icons/fa";
-import { GiDiscGolfBasket, GiFrisbee, GiArchiveRegister } from "react-icons/gi";
+import { GiDiscGolfBasket, GiFrisbee } from "react-icons/gi";
+import {MdAddLocation} from "react-icons/md"
 
 import { NavLink } from 'react-router-dom';
 
@@ -15,32 +16,38 @@ const Sidebar = ({children}) => {
             name: "Home",
             icon:<FaHome/>
         },
+
         {
             path: "/about",
             name: "About",
             icon:<FaPager/>
         },
+
         {
             path: "/players",
             name: "Players",
             icon:<FaPeopleArrows/>
         },
+
         {
             path: "/games",
             name: "Games",
             icon:<GiFrisbee/>
 
         },
+
+        {
+            path: "/addCourse",
+            name: "Add Course",
+            icon: <MdAddLocation/>
+        },
+
         {
             path: "/courses",
             name: "Courses",
             icon:<GiDiscGolfBasket/>
         },
-        {
-            path: "/register",
-            name: "Register",
-            icon:<GiArchiveRegister/>
-        },
+
         {
             path: "/login",
             name: "Login",
@@ -50,7 +57,8 @@ const Sidebar = ({children}) => {
     ]
 
     return (
-        <div className="container">
+
+        <div className="containerSideBar">
             <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                 <div className="top_section">
                     {/*<img src="../basket.jpeg" alt="discGolfLogo" style={{display: isOpen ? "block" : "none"}} className="logoLogo">*/}
@@ -69,9 +77,11 @@ const Sidebar = ({children}) => {
                         </NavLink>
                     ))
                 }
+
             </div>
-            <main>{children}</main>
+            {children}
         </div>
+
     );
 };
 

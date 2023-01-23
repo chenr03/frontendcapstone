@@ -8,6 +8,7 @@ const CourseDetails = (props) => {
     console.log(id);
     const course = props.courses.find(course => course.id === +id)
 
+
     return (
         <Container maxWidth="sm" className="list-container" style={{marginTop: '25%', marginLeft: '75%' }} >
             <h1 style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {course.name}  </h1>

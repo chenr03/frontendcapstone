@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 
 
-function Players() {
+function Players(props) {
+    console.log('Players props:', props)
 
 useEffect(() => {
     fetch('http://localhost:8080/Players')

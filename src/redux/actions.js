@@ -13,6 +13,7 @@ export const login = (username) => {
 // }
 
 export const addCourse = (course) => {
+    console.log();
     return {
         type: 'ADD_COURSE',
         value: course

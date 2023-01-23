@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import {  createTheme, ThemeProvider, TextField, Button, Container } from "@mui/material";
 import { grey } from "@mui/material/colors"
@@ -83,15 +83,21 @@ const Register = (props) => {
 
     return (
         <ThemeProvider theme={theme}>
-            <div className="App">
-                <Container maxWidth="sm">
+                <Container maxWidth="lg">
                     <form className="login-form"
                           onSubmit={register}
                           style = {{padding: '20px',
-                              backgroundColor: 'white'
+                              backgroundColor: 'antiquewhite',
+                              borderColor: 'black',
+                              textAlign: 'center',
+                              border: '5px inset',
+                              marginTop: '33%',
+                              marginLeft: '25%'
 
-                          }} >
 
+
+                          }}  >
+                        <h4 style={{textAlign: 'center'}}> Community Disc Registration </h4>
                         <TextField
                             required
                             onChange={handleTextChange}
@@ -109,7 +115,7 @@ const Register = (props) => {
                             type="password"
                         />
                         <Button
-                            style={{background: 'grey'}}
+                            style={{background: 'grey', textAlign: 'center'}}
                             type="submit"
                             className="login-button"
                             variant="contained"
@@ -117,9 +123,10 @@ const Register = (props) => {
                         >
                             Register
                         </Button>
+                       <Link style={{textAlign: 'center'}}> Forgot Username ? </Link>
+                        <Link style={{textAlign: 'center'}}> Forgot Password ? </Link>
                     </form>
                 </Container>
-            </div>
         </ThemeProvider>
     );
 };

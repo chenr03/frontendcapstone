@@ -16,6 +16,14 @@ const state = {
                 }
         ]
 
+        // games: [
+        //         {
+        //                 "id": 1,
+        //                 "name": "Friday Night Lights"
+        //
+        //         }
+        // ]
+
 }
 
 export default state

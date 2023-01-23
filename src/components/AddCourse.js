@@ -9,6 +9,7 @@ import {
 import Map from './Map'
 
 
+
 class AddCourse extends Component {
     state = {
         open: false,
@@ -17,6 +18,7 @@ class AddCourse extends Component {
         address: '',
         hours: '',
     }
+
 
     toggleDialog = () => this.setState({ open: !this.state.open })
 
@@ -28,6 +30,7 @@ class AddCourse extends Component {
 
     handleSubmit = (e) => {
         console.log('this.state: ', this.state )
+
         e.preventDefault()
         const payload = { ...this.state }
         payload.id = this.props.courses.length + 1
@@ -36,11 +39,31 @@ class AddCourse extends Component {
         // console.log("THE Listing", payload)
         // add this.props.addCar function here
         // also add this.setState to close the dialog
-        this.props.addCourse(payload)
+        // this.props.addCourse(payload)
+        const setCourse = {
+            // Post Course to Database
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'},
+            body: JSON.stringify({ courseName: this.state.name })
+        };
+
+        console.log('this.state.name:', this.state.name);
+
+        fetch('http://localhost:8080/course/', setCourse)
+            .then(response => response.json())
+        .then(data => this.setState({
+            name: '',
+            description: '',
+            address: '',
+            hours: ''
+        }))
         this.setState({ open: false })
     }
 
+
     componentDidUpdate = (prevProps, prevState) => {
+
         if (prevState.open !== this.state.open) {
             this.setState({
                 name: '',
@@ -48,8 +71,11 @@ class AddCourse extends Component {
                 address: '',
                 hours: ''
             })
+
         }
+        console.log('this.state.name:', this.state.name);
     }
+
 
     render() {
         return (
@@ -58,9 +84,9 @@ class AddCourse extends Component {
 
                     <Button
                         variant="contained"
-                        className="add-listing"
+                        className="add-course"
                         onClick={this.toggleDialog}
-                        sx={{backgroundColor: 'grey', marginBottom: '20px'}}
+                        sx={{display: 'flex', background: 'grey', marginTop: '40%', marginLeft: "90%", fontSize: '50px'}}
                     >
                         Add New Course
                     </Button>

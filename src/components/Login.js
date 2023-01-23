@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import {  createTheme, ThemeProvider, TextField, Button, Container } from "@mui/material";
 import { grey } from "@mui/material/colors"
 
@@ -63,7 +63,7 @@ const Login = (props) => {
 
 
 
-        // navigate("/dashboard");
+
 
     };
 
@@ -84,14 +84,24 @@ const Login = (props) => {
 
     return (
         <ThemeProvider theme={theme}>
-        <div className="App">
-            <Container maxWidth="sm">
+
+            <Container maxWidth="lg">
+
                 <form className="login-form"
                       onSubmit={login}
                       style = {{padding: '20px',
-                                backgroundColor: 'white'
+                                backgroundColor: 'antiquewhite',
+                                borderColor: 'black',
+                                border: '5px inset',
+                                marginTop: '33%',
+                                marginLeft: '25%'
+
+
 
                 }} >
+
+                    <h4 style={{textAlign: 'center'}}> Community Disc Login</h4>
+                    <p style={{textAlign: 'center'}}> Please enter your Login & Password </p>
 
                     <TextField
                         required
@@ -118,9 +128,10 @@ const Login = (props) => {
                     >
                         Login
                     </Button>
+
+                    <p style={{textAlign: 'center'}}> Don't have an account? <Link to='/register'> Register Now </Link></p>
                 </form>
             </Container>
-        </div>
         </ThemeProvider>
     );
 };

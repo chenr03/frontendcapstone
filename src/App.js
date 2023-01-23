@@ -42,35 +42,36 @@ function App() {
   return (
   <Provider store={store} >
         <Router>
-            <div className="header" >
-                <div className="App">
+            <main style={{width: '100%'}}>
+                <header className="header" >
+
 
                     <Sidebar>
-                    <Routes>
-                        {/* Normal Routing Paths */}
-                        <Route path="/home" element={<Home/>} />
-                        <Route path="/about" element={<About/>} />
-                        <Route path="/login" element={<Login/>} />
-                        <Route path="/register" element={<Register/>} />
-                        <Route path="/players" element={<Players/>} />
-                        <Route path="/player/:id" element={<Players/>} />
-                        <Route path="/games" element={<AllGames/>} />
-                        <Route path="/game/:id" element={<Game/>} />
-                        <Route path="/courses" element={<AllCourses/>} />
-                        <Route path="/course/:id" element={<Course/>} />
-                        <Route path="/dashboard" element={<Dashboard/>} />
-                        <Route path="/CourseDetails/:id" element={<CourseDetails />} />
+                         <Routes>
+                            {/* Normal Routing Paths */}
+                            <Route path="/home" element={<Home/>} />
+                            <Route path="/about" element={<About/>} />
+                            <Route path="/login" element={<Login/>} />
+                            <Route path="/register" element={<Register/>} />
+                            <Route path="/players" element={<Players/>} />
+                            <Route path="/player/:id" element={<Players/>} />
+                            <Route path="/games" element={<AllGames/>} />
+                            <Route path="/game/:id" element={<Game/>} />
+                            <Route path="/courses" element={<AllCourses/>} />
+                            <Route path="/course/:id" element={<Course/>} />
+                            <Route path="/dashboard" element={<Dashboard/>} />
+                            <Route path="/CourseDetails/:id" element={<CourseDetails />} />
 
-                        {/* Protected Routing Paths */}
-                        <Route path="/users" element={<ProtectedRoute component={Users} />} />
-                        <Route path="/users/:id" element={<ProtectedRoute component={User} />} />
-                        <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
-                        <Route path="/FindCourse" element={<ProtectedRoute component={FindCourse} />} />
+                            {/* Protected Routing Paths */}
+                            <Route path="/users" element={<ProtectedRoute component={Users} />} />
+                            <Route path="/users/:id" element={<ProtectedRoute component={User} />} />
+                            <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
+                            <Route path="/FindCourse" element={<ProtectedRoute component={FindCourse} />} />
 
-                    </Routes>
+                        </Routes>
                     </Sidebar>
-                </div>
-            </div>
+                </header>
+            </main>
         </Router>
   </Provider>
   );

@@ -5,57 +5,6 @@
   text-decoration: none;
 }
 
-
-.App {
-  text-align: center;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/*.App-header {*/
-/*  background-color: white;*/
-/*  min-height: 100vh;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-
-/*  font-size: calc(10px + 2vmin);*/
-
-/*}*/
-
-/*.navMainMenu {*/
-/*  width: 100% !important;*/
-/*}*/
-
-.App-link {
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 50%;
-  gap: 15px;
-  vertical-align: center;
-  margin-top: 275px;
-
-}
-
 .button {
   background-color: dimgrey;
 }
@@ -77,8 +26,6 @@ body {
 
 
 }
-
-
 
 .circle {
   position: absolute;
@@ -127,15 +74,12 @@ tr:nth-child(even) {
 }
 
 
-
-.footer {
-
-}
-
-.container{
+.containerSideBar{
   display:flex;
   padding: 0;
-  margin: 0
+  margin: 0;
+  width: 100vw;
+
 
 }
 
@@ -159,10 +103,6 @@ tr:nth-child(even) {
 
 }
 
-/*.logoLogo {*/
-/*  width: 100px;*/
-/*  height: 100px;*/
-/*}*/
 
 .bars{
   display: flex;
@@ -258,30 +198,30 @@ ul {
   padding: 50px;
 }
 
-.login {
-  margin-top: 100px;
-}
+
 
 /* Listing */
 .main-listings{
-  margin: 30px
+  margin: 30px;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 50px auto;
-  width: 50%;
-  gap: 15px;
+.dashboardSection {
+  width: 100vw;
+  height: 25%;
 }
+
 
 .welcomeDashboard {
   color: white;
   font-size: 25px;
   background-color: black;
   width: 100%;
- justify-content: center;
-  position: absolute;
+  justify-content: center;
+
 
 
 

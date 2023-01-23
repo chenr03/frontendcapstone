@@ -27,7 +27,7 @@ const Courses = (props) => {
 
     return (
         <div>
-            <Container>
+            <Container >
                 <Table>
                     <TableHead>
                         <TableRow>
