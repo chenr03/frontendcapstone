@@ -84,7 +84,7 @@ const AllCourses = (props) => {
                                                 <DeleteIcon
                                                     // add onClick method here
                                                     onClick={() => props.removeCourse(courses.id)}
-                                                    className="icon text-red" />
+                                                    className="iconTextRed" />
                                             </TableCell>
                                         )
                                     }

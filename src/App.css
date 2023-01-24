@@ -57,22 +57,22 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  margin-top: 175px;
-  width: 50% !important;
+  margin-top: 10%;
+  width: 75% !important;
   vertical-align: central;
-  margin-left: 25%;
-  margin-right: 25%;
+  justify-content: center;
   background-color: antiquewhite;
 
 }
 
 td, th {
   border: 5px solid #343a40;
-  width: 100% !important;
+  width: 100%;
   color: black;
   font-size: 15px;
-  text-align: center;
+  align-items: center;
   padding: 8px;
+
 
 
 }
@@ -188,7 +188,7 @@ ul {
   color: gray
 }
 
-.text-red {
+.iconTextRed {
   color: green
 
 }
@@ -214,7 +214,7 @@ ul {
 
 /* Listing */
 .main-listings{
-  margin: 30px;
+  /*margin: 30px;*/
   width: 100vw;
   text-align: center;
   align-items: center;
@@ -287,6 +287,62 @@ ul {
   left: 0;
   width: 100%;
 }
+
+.allBoxes {
+  display: flex;
+  height: 400px;
+  margin: 1%;
+  padding: 1%;
+
+}
+
+.playersBox {
+  flex-grow: 1;
+  margin: 10px;
+  background-color: #343a40;
+  color: white;
+
+
+}
+
+.coursesBox {
+  flex-grow: 1;
+  margin: 10px;
+  background-color: #343a40;
+  color: white;
+
+
+}
+
+.gamesBox {
+  flex-grow: 1;
+  margin: 10px;
+  background-color: #343a40;
+  color: white;
+
+
+}
+
+.playersBoxH4 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.coursesBoxH4 {
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+.gamesBoxH4 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+
+
 
 
 

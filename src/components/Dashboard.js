@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+// import {AllCourses} from './AllCourses'
 
 function Dashboard(props) {
     // console.log('Props Dashboard Comp: ', props)
 
     // const playerName = props.name
-    // const courseName = props.name
+    const [courses, setCourses] = useState([])
+
     // const gameName = props.name
 return (
 
@@ -18,16 +21,21 @@ return (
             </h1>
         </div>
         <div className = "allBoxes">
-            <div className = "playersBox" style={{border: '5px solid white', display: 'flex', flexDirection: 'row'}}>
-                <h4> Players:  </h4>
+            <div className = "playersBox" style={{border: '5px solid white'}}>
+                <h4 className = "playersBoxH4"> Players  </h4>
                 {/*{playerName}*/}
             </div>
             <div className = "coursesBox" style={{border: '5px solid white'}}>
-                <h4> Courses:  </h4>
-                {/*{courseName}*/}
+                <h4 className = "coursesBoxH4"> Courses  </h4>
+                <ul>
+                    <li>
+                        {courses} {setCourses}
+                    </li>
+                </ul>
+
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
-                <h4> Games:  </h4>
+                <h4 className = "gamesBoxH4"> Games  </h4>
                 {/*{gameName}*/}
             </div>
          </div>
