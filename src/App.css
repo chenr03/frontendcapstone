@@ -239,11 +239,20 @@ ul {
 
 .dashboardText {
   font-size: 75px;
-  height: 100vh;
+  height: 100px;
+  padding-top: 75px;
+  color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0 3px 3px rgba(255,255,255,0.5);
 }
 
 .dashboardHeader {
-  background: #4caf50;
+  background-image: url("https://thumbs.dreamstime.com/b/web-header-banner-11577882.jpg");
+  background-size: cover;
+  margin: 1%;
+  border-radius: 50%;
+  border: 5px solid white;
+  text-align: center;
 }
 
 .App {
@@ -289,7 +298,7 @@ ul {
 
 .allBoxes {
   display: flex;
-  height: 400px;
+  height: 600px;
   margin: 1%;
   padding: 1%;
 

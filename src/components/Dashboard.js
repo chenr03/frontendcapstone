@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 // import {AllCourses} from './AllCourses'
 
@@ -6,7 +6,7 @@ function Dashboard(props) {
     // console.log('Props Dashboard Comp: ', props)
 
     // const playerName = props.name
-    const [courses, setCourses] = useState([])
+
 
     // const gameName = props.name
 return (
@@ -27,11 +27,7 @@ return (
             </div>
             <div className = "coursesBox" style={{border: '5px solid white'}}>
                 <h4 className = "coursesBoxH4"> Courses  </h4>
-                <ul>
-                    <li>
-                        {courses} {setCourses}
-                    </li>
-                </ul>
+
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
