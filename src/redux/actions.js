@@ -13,7 +13,6 @@ export const login = (username) => {
 // }
 
 export const addCourse = (course) => {
-    console.log();
     return {
         type: 'ADD_COURSE',
         value: course
@@ -23,6 +22,20 @@ export const addCourse = (course) => {
 export const removeCourse = (id) => {
     return {
         type: 'REMOVE_COURSE',
+        value: id
+    }
+}
+
+export const addGame = (game) => {
+    return {
+        type: 'ADD_GAME',
+        value: game
+    }
+}
+
+export const removeGame = (id) => {
+    return {
+        type: 'REMOVE_GAME',
         value: id
     }
 }

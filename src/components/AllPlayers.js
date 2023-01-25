@@ -1,17 +1,17 @@
 import React, {useEffect} from 'react';
 
 
-function Players(props) {
-    console.log('Players props:', props)
+function AllPlayers(props) {
+    console.log('AllPlayers props:', props)
 
 useEffect(() => {
     fetch('http://localhost:8080/Players')
         .then((response) => {
-            console.log('Players response:', response)
+            console.log('AllPlayers response:', response)
             return response.json()
 
         }).then((data)=>{
-        console.log('Players Data:', data)
+        console.log('AllPlayers Data:', data)
     })
 }, [])
 
@@ -22,7 +22,7 @@ useEffect(() => {
 //             return response.json()
 //
 //         }).then((data) => {
-//         console.log('Players by PlayerId Data: ', data)
+//         console.log('AllPlayers by PlayerId Data: ', data)
 //     })
 // }, [])
 
@@ -104,4 +104,4 @@ useEffect(() => {
         )
 }
 
-export default Players;
+export default AllPlayers;

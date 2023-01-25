@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaPeopleArrows, FaPager, FaHome, FaGrinStars }from "react-icons/fa";
 import { GiDiscGolfBasket, GiFrisbee } from "react-icons/gi";
-import {MdAddLocation} from "react-icons/md"
+
 
 import { NavLink } from 'react-router-dom';
 
@@ -34,12 +34,6 @@ const Sidebar = ({children}) => {
             name: "Games",
             icon:<GiFrisbee/>
 
-        },
-
-        {
-            path: "/addCourse",
-            name: "Add Course",
-            icon: <MdAddLocation/>
         },
 
         {

@@ -3,9 +3,10 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About'
 import Login from './containers/Login';
-import Players  from './components/Players';
+import AllPlayers  from './components/AllPlayers';
 import Register from './components/Register';
 import AllGames  from './components/AllGames';
+import AddGame from './components/AddGame'
 import Game from './components/Game'
 import AllCourses from './containers/AllCourses';
 import Course from './components/Course';
@@ -53,19 +54,20 @@ function App() {
                             <Route path="/about" element={<About/>} />
                             <Route path="/login" element={<Login/>} />
                             <Route path="/register" element={<Register/>} />
-                            <Route path="/players" element={<Players/>} />
-                            <Route path="/player/:id" element={<Players/>} />
+                            <Route path="/players" element={<AllPlayers/>} />
+                            {/*<Route path="/player/:id" element={<Player/>} />*/}
                             <Route path="/games" element={<AllGames/>} />
                             <Route path="/game/:id" element={<Game/>} />
                             <Route path="/courses" element={<AllCourses/>} />
                             <Route path="/course/:id" element={<Course/>} />
-                            <Route path="/dashboard" element={<Dashboard/>} />
                             <Route path="/CourseDetails/:id" element={<CourseDetails />} />
+                             <Route path="/dashboard" element={<Dashboard/>} />
 
                             {/* Protected Routing Paths */}
                             <Route path="/users" element={<ProtectedRoute component={Users} />} />
                             <Route path="/users/:id" element={<ProtectedRoute component={User} />} />
                             <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
+                            <Route path="/AddGame" element={<ProtectedRoute component={AddGame} />} />
                             <Route path="/FindCourse" element={<ProtectedRoute component={FindCourse} />} />
 
                         </Routes>

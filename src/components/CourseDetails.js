@@ -4,7 +4,7 @@ import { Container} from '@mui/material';
 import Map from '../components/Map'
 
 const CourseDetails = (props) => {
-    let { id} = useParams();
+    let { id } = useParams();
     console.log(id);
     const course = props.courses.find(course => course.id === +id)
     const [courses, setCourses] = useState()

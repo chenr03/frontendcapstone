@@ -14,15 +14,15 @@ const state = {
                         "address": "4239 Gallatin Ln, Bridgeton, MO 63044",
                         "hours": "6 AM - 9 PM"
                 }
-        ]
+        ],
 
-        // games: [
-        //         {
-        //                 "id": 1,
-        //                 "name": "Friday Night Lights"
-        //
-        //         }
-        // ]
+        games: [
+                {
+                        "id": 1,
+                        "name": "Friday Night Lights"
+
+                }
+        ]
 
 }
 

@@ -9,16 +9,12 @@ function Home() {
 
 
     return(
-        <article className = "article-circle">
-            <div className = "circle"
-                 style={{
-                     backgroundColor: "#343a40",
-                     justifyContent: 'center',
-                     color: 'whitesmoke',
-                     textShadow: '4px 4px 5px #000000',
-                     borderRadius: '50%',
-                     border: '5px double white'}}
-            >
+        <article className = "articleCircle">
+            <div className = "circle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 <h1 className = "welcomeHeader"> Welcome to Community Disc </h1>
 
 

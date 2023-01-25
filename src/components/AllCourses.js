@@ -48,7 +48,7 @@ const AllCourses = (props) => {
             )}
 
             <Container>
-                <Table>
+                <Table className = "coursesTable">
                     <TableHead>
                         <TableRow>
                             <TableCell style={{color: '#343a40', fontWeight: 'Bolder', fontSize: '20px', textDecoration: 'underline'}}>Name </TableCell>

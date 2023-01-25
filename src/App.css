@@ -32,10 +32,18 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 400px;
-  width: 400px;
+  height: 50vh;
+  width: 50vh;
+  justify-content: center;
+  color: whitesmoke;
+  text-shadow: 4px 4px 5px #000000;
+  border-radius: 50% / 50%;
+  border: 5px double white;
+  background: #343a40;
+
 
 }
+
 
 .welcomeHeader {
   position: absolute;
@@ -43,6 +51,10 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 3em;
 }
 
 .golfFlagLogo {
@@ -70,6 +82,7 @@ td, th {
   width: 100%;
   color: black;
   font-size: 15px;
+  text-align: center;
   align-items: center;
   padding: 8px;
 
@@ -202,10 +215,6 @@ ul {
   margin: auto 20px;
 }
 
-.listing-container {
-  margin: 50px;
-}
-
 .listing-paper {
   padding: 50px;
 }
@@ -214,11 +223,11 @@ ul {
 
 /* Listing */
 .main-listings{
-  /*margin: 30px;*/
-  width: 100%;
+  width: 50%;
   text-align: center;
   align-items: center;
   justify-content: center;
+  justify-items: center;
 
 }
 
@@ -239,21 +248,21 @@ ul {
 
 .dashboardText {
   font-size: 75px;
-  height: 100px;
-  padding-top: 75px;
-  color: transparent;
-  -webkit-background-clip: text;
-  text-shadow: 0 3px 3px rgba(255,255,255,0.5);
+  color: white;
+
+
 }
 
 .dashboardHeader {
   background-image: url("https://thumbs.dreamstime.com/b/web-header-banner-11577882.jpg");
   background-size: cover;
-  margin: 1%;
-  border-radius: 50%;
-  border: 5px solid white;
+  border: 5px double white;
   text-align: center;
+
+
+
 }
+
 
 .App {
   margin: 0;
@@ -298,7 +307,7 @@ ul {
 
 .allBoxes {
   display: flex;
-  height: 600px;
+  height: 800px;
   margin: 1%;
   padding: 1%;
 
@@ -347,7 +356,19 @@ ul {
   text-decoration: underline;
 }
 
+.coursesTable {
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
 
+.addCourseButton {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+
+
+
+}
 
 
 

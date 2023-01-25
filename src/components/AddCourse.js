@@ -80,20 +80,20 @@ class AddCourse extends Component {
     render() {
         return (
             <Fragment>
-                <div style={{ textAlign: 'center' }}>
-
+                <div className = "addCourseButton">
                     <Button
                         variant="contained"
-                        className="add-course"
+                        className="addCourse"
                         onClick={this.toggleDialog}
-                        sx={{display: 'flex', background: 'grey', marginTop: '40%', marginLeft: "90%", fontSize: '50px'}}
+                        style={{ background: 'green', fontSize: '20px', marginTop: '15px' }}
                     >
-                        Add New Course
+                      New Course
                     </Button>
+
                 </div>
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
-                        <DialogTitle>Add New Course</DialogTitle>
+                        <DialogTitle style={{textAlign: 'center'}}>Add New Course</DialogTitle>
                         <DialogContent sx={{display: 'flex', justifyContent: 'center'}}>
                             <form
                                 onSubmit={this.handleSubmit}

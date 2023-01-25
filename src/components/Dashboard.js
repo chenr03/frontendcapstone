@@ -1,5 +1,6 @@
 import React from 'react'
 import AllCourses from "../containers/AllCourses";
+import AddCourse from '../containers/AddCourse';
 
 // import {AllCourses} from './AllCourses'
 
@@ -16,7 +17,7 @@ return (
         <header className = "welcomeDashboard" style={{textAlign: 'center'}}>
             Welcome to Community Disc {props.user} !
         </header>
-        <div className = "dashboardHeader" style={{border: '5px none red', flexDirection: 'row', textAlign: 'center', height: '300px' }}>
+        <div className = "dashboardHeader" style={{ flexDirection: 'row', textAlign: 'center', height: '100px' }}>
             <h1 className = "dashboardText">
                 Dashboard
             </h1>
@@ -27,8 +28,9 @@ return (
                 {/*{playerName}*/}
             </div>
             <div className = "coursesBox" style={{border: '5px solid white'}}>
-                <h4 className = "coursesBoxH4"> Courses  </h4>
-                <AllCourses/>
+
+                <h4 className = "coursesBoxH4">  Courses  <AddCourse/>  Please click Button to Add New Course </h4>
+                <AllCourses style={{alignItems: 'center'}}/>
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
