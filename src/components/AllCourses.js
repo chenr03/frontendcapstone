@@ -64,16 +64,19 @@ const AllCourses = (props) => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {courses.map((courses, idx) => {
-                            return( <TableRow key={courses.id}>
+                        {console.log('courses', courses)}
+
+                        {courses.map((c, idx) => {
+                            return( <TableRow key={c.courseId}>
                                     <TableCell  scope="row" style={{color: 'white'}}>
                                         <Typography>
                                             <Link
-                                                to={`/CourseDetails/${courses.id}`}
+                                                to={`/CourseDetails/${c.courseId}`}
                                                 component="button"
                                                 variant="header1"
                                                 style={{ color: '#343a40'}}>
-                                                {courses["courseName"] }
+                                                {/*{courses["courseName"] }*/}
+                                                {c.courseName}
                                             </Link>
                                         </Typography>
                                     </TableCell>

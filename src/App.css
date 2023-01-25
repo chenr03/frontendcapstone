@@ -215,7 +215,7 @@ ul {
 /* Listing */
 .main-listings{
   /*margin: 30px;*/
-  width: 100vw;
+  width: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;

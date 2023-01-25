@@ -1,4 +1,5 @@
 import React from 'react'
+import AllCourses from "../containers/AllCourses";
 
 // import {AllCourses} from './AllCourses'
 
@@ -27,7 +28,7 @@ return (
             </div>
             <div className = "coursesBox" style={{border: '5px solid white'}}>
                 <h4 className = "coursesBoxH4"> Courses  </h4>
-
+                <AllCourses/>
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
