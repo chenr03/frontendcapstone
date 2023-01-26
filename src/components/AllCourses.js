@@ -80,7 +80,9 @@ const AllCourses = (props) => {
                                             </Link>
                                         </Typography>
                                     </TableCell>
-
+                                    {/*<TableCell  scope="row">{courses.description["description"]}</TableCell>*/}
+                                    {/*<TableCell  scope="row">{courses.address["address"]}</TableCell>*/}
+                                    {/*<TableCell  scope="row">{courses.hours["hours"]}</TableCell>*/}
                                     {
                                         props.online && (
                                             <TableCell>

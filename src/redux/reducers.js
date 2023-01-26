@@ -57,7 +57,7 @@ const user = (state = null, action) => {
             return state;
         case 'LOGOUT':
             console.log('LoggedOut in reducer', state)
-            return state = false
+            return state.online = false
         default:
             return state
 

@@ -1,5 +1,6 @@
 import Dashboard from '../components/Dashboard'
 import { connect } from "react-redux";
+import {logout} from '../redux/actions'
 
 
 const mapStateToProps = (state) => {
@@ -8,6 +9,12 @@ const mapStateToProps = (state) => {
     }
 }
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        logout: () => dispatch(logout())
+    }
+}
 
 
-export default connect(mapStateToProps)(Dashboard)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)

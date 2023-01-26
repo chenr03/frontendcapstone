@@ -248,7 +248,8 @@ ul {
 
 .dashboardText {
   font-size: 75px;
-  color: white;
+  color: #343a40;
+  text-shadow: white;
 
 
 }

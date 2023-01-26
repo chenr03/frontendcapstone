@@ -1,6 +1,8 @@
 import React from 'react'
 import AllCourses from "../containers/AllCourses";
 import AddCourse from '../containers/AddCourse';
+// import {logout} from '../containers/Dashboard'
+// import {Button} from "@mui/material";
 
 // import {AllCourses} from './AllCourses'
 
@@ -25,7 +27,7 @@ return (
         <div className = "allBoxes">
             <div className = "playersBox" style={{border: '5px solid white'}}>
                 <h4 className = "playersBoxH4"> Players  </h4>
-                {/*{playerName}*/}
+                {/*<AllPlayers> <AddPlayers/>*/}
             </div>
             <div className = "coursesBox" style={{border: '5px solid white'}}>
 
@@ -34,10 +36,12 @@ return (
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
-                <h4 className = "gamesBoxH4"> Games  </h4>
-                {/*{gameName}*/}
+                <h4 className = "gamesBoxH4"> Games </h4>
+                {/*/!*<AllGames>*!/ <AddGame/>*/}
             </div>
+
          </div>
+            {/*<Button onClick={()=> props.logout()} to="/Logout" sx={{color: 'white'}}>Logout</Button>*/}
     </section>
 
 )}

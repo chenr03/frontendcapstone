@@ -9,7 +9,7 @@ import Dashboard from './containers/Dashboard';
 // Auth Components
 import Login from './containers/Login';
 import Register from './components/Register';
-import Logout from './components/Logout';
+// import Logout from './components/Logout';
 
 // Player Components
 import AllPlayers  from './components/AllPlayers';
@@ -69,7 +69,7 @@ function App() {
                             <Route path="/home" element={<Home/>} />
                             <Route path="/about" element={<About/>} />
                             <Route path="/login" element={<Login/>} />
-                            <Route path="/logout" element={<Logout/>} />
+                            {/*<Route path="/logout" element={<Logout/>} />*/}
                             <Route path="/register" element={<Register/>} />
                             <Route path="/players" element={<AllPlayers/>} />
                             <Route path="/player/:id" element={<Player/>} />
