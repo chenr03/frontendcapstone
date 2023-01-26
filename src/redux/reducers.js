@@ -1,4 +1,3 @@
-
 import { combineReducers } from 'redux'
 
 
@@ -33,6 +32,21 @@ const games = (state = [], action) => {
     return state
 }
 
+const players = (state = [], action) => {
+    // eslint-disable-next-line
+    switch (action.type) {
+        case 'ADD_PLAYER':
+            return [...state, action.value]
+
+        case 'REMOVE_PLAYER':
+            const newPlayer = state.filter((player) => {
+                return player.id !== action.value
+            })
+            return newPlayer
+    }
+    return state
+}
+
 const user = (state = null, action) => {
     console.log('State in reducer', state);
     switch (action.type) {
@@ -41,9 +55,9 @@ const user = (state = null, action) => {
             state.username = action.value;
             state.online = true;
             return state;
-        // case 'LOGOUT':
-        //     console.log('LoggedOut in reducer', state)
-        //     return state = false
+        case 'LOGOUT':
+            console.log('LoggedOut in reducer', state)
+            return state = false
         default:
             return state
 
@@ -52,4 +66,4 @@ const user = (state = null, action) => {
 }
 
 
-export default combineReducers({ user, courses, games } )
+export default combineReducers({ user, courses, games, players } )

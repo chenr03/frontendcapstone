@@ -1,25 +1,41 @@
+// Starter Components
 import React from 'react';
 import './App.css';
 import Home from './components/Home';
-import About from './components/About'
+import About from './components/About';
+import Sidebar from './components/Sidebar';
+import Dashboard from './containers/Dashboard';
+
+// Auth Components
 import Login from './containers/Login';
-import AllPlayers  from './components/AllPlayers';
 import Register from './components/Register';
+import Logout from './components/Logout';
+
+// Player Components
+import AllPlayers  from './components/AllPlayers';
+import Player from './components/Player';
+import AddPlayer from './components/AddPlayer';
+
+// Game Components
 import AllGames  from './components/AllGames';
-import AddGame from './components/AddGame'
-import Game from './components/Game'
+import Game from './components/Game';
+import AddGame from './components/AddGame';
+
+// Course Components
 import AllCourses from './containers/AllCourses';
 import Course from './components/Course';
-import FindCourse from './components/FindCourse'
-import Dashboard from './containers/Dashboard';
-import { Provider } from 'react-redux';
-import store from './redux/store'
-import Sidebar from './components/Sidebar';
-import cookie from 'cookie';
-import Users from './components/Users';
-import User from './components/User';
 import AddCourse from './containers/AddCourse';
 import CourseDetails from "./containers/CourseDetails";
+import FindCourse from './components/FindCourse';
+
+// User Components
+import Users from './components/Users';
+import User from './components/User';
+
+// App Components
+import { Provider } from 'react-redux';
+import store from './redux/store'
+import cookie from 'cookie';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
@@ -53,22 +69,25 @@ function App() {
                             <Route path="/home" element={<Home/>} />
                             <Route path="/about" element={<About/>} />
                             <Route path="/login" element={<Login/>} />
+                            <Route path="/logout" element={<Logout/>} />
                             <Route path="/register" element={<Register/>} />
                             <Route path="/players" element={<AllPlayers/>} />
-                            {/*<Route path="/player/:id" element={<Player/>} />*/}
+                            <Route path="/player/:id" element={<Player/>} />
                             <Route path="/games" element={<AllGames/>} />
                             <Route path="/game/:id" element={<Game/>} />
                             <Route path="/courses" element={<AllCourses/>} />
                             <Route path="/course/:id" element={<Course/>} />
                             <Route path="/CourseDetails/:id" element={<CourseDetails />} />
-                             <Route path="/dashboard" element={<Dashboard/>} />
+                            <Route path="/dashboard" element={<Dashboard/>} />
 
                             {/* Protected Routing Paths */}
                             <Route path="/users" element={<ProtectedRoute component={Users} />} />
                             <Route path="/users/:id" element={<ProtectedRoute component={User} />} />
                             <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
                             <Route path="/AddGame" element={<ProtectedRoute component={AddGame} />} />
+                            <Route path="/AddPlayer" element={<ProtectedRoute component={AddPlayer} />} />
                             <Route path="/FindCourse" element={<ProtectedRoute component={FindCourse} />} />
+
 
                         </Routes>
                     </Sidebar>

@@ -6,11 +6,12 @@ export const login = (username) => {
     }
 }
 
-// export const logout = () => {
-//     return {
-//         type: 'LOGOUT'
-//     }
-// }
+export const logout = (username) => {
+    return {
+        type: 'LOGOUT',
+        value: username
+    }
+}
 
 export const addCourse = (course) => {
     return {
@@ -36,6 +37,20 @@ export const addGame = (game) => {
 export const removeGame = (id) => {
     return {
         type: 'REMOVE_GAME',
+        value: id
+    }
+}
+
+export const addPlayer = (player) => {
+    return {
+        type: 'ADD_PLAYER',
+        value: player
+    }
+}
+
+export const removePlayer = (id) => {
+    return {
+        type: 'REMOVE_PLAYER',
         value: id
     }
 }

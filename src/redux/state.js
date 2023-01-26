@@ -22,8 +22,22 @@ const state = {
                         "name": "Friday Night Lights"
 
                 }
-        ]
+        ],
 
+
+        players: [
+                {
+                        "id": 1,
+                        "name": "Chris"
+
+                },
+
+                {
+                        "id": 1,
+                        "name": "Edward"
+
+                }
+        ]
 }
 
 export default state
