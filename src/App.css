@@ -371,9 +371,12 @@ ul {
 }
 
 .logoutButton {
-  background-color: red;
+  background-color: #343a40;
   color: white;
-  justify-content: flex-end;
+  margin-left: 50%;
+
+
+
 }
 
 

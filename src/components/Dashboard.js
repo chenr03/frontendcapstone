@@ -26,8 +26,7 @@ return (
     <section className = "dashboardSection">
         <header className = "welcomeDashboard" style={{textAlign: 'center'}}>
             Welcome to Community Disc {props.user} !
-            { props.user !== null ? <button className="logoutButton" onClick={() => logout()}
-                     style={{color: 'white'}}>Logout</button> : null}
+            { props.user !== null ? <button className="logoutButton" onClick={() => logout()}>Logout</button> : null}
         </header>
         <div className = "dashboardHeader" style={{ flexDirection: 'row', textAlign: 'center', height: '100px' }}>
             <h1 className = "dashboardText">
