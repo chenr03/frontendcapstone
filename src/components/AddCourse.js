@@ -45,7 +45,7 @@ class AddCourse extends Component {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'},
-            body: JSON.stringify({ courseName: this.state.name })
+            body: JSON.stringify({ courseName: this.state.name, courseDescription: this.state.description })
         };
 
         console.log('this.state.name:', this.state.name);

@@ -32,9 +32,9 @@ const CourseDetails = (props) => {
     return (
         <Container maxWidth="sm" className="list-container" style={{marginTop: '15%'}} >
             <h1 style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {courses.courseName}  </h1>
-            <h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.address}</h2>
-            <h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.hours}</h2>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.description}</p>
+            {/*<h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.address}</h2>*/}
+            {/*<h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.hours}</h2>*/}
+            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.courseDescription}</p>
             <Map name={courses.courseName} address={courses.address} style={{ borderColor: '5px solid white', textAlign: 'center' }}/>
         </Container>
     )
