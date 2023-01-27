@@ -47,23 +47,45 @@ const players = (state = [], action) => {
     return state
 }
 
+// const user = (state = null, action) => {
+//     console.log('State in reducer', state);
+//     switch (action.type) {
+//         case 'LOGIN':
+//             console.log('State in reducer', state);
+//             state.username = action.value;
+//             state.online = true;
+//             return state;
+//         case 'LOGOUT':
+//             console.log('LoggedOut in reducer', state)
+//             state.username = null;
+//             state.online = false;
+//             return state;
+//         default:
+//             return state
+//
+//     }
+//
+// }
+
 const user = (state = null, action) => {
     console.log('State in reducer', state);
     switch (action.type) {
         case 'LOGIN':
+
             console.log('State in reducer', state);
             state.username = action.value;
             state.online = true;
             return state;
         case 'LOGOUT':
             console.log('LoggedOut in reducer', state)
-            return state.online = false
+            state.username = null;
+            state.online = false;
+            return state;
         default:
             return state
 
     }
 
 }
-
 
 export default combineReducers({ user, courses, games, players } )

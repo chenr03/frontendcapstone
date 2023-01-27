@@ -368,8 +368,14 @@ ul {
   margin-left: 50px;
 
 
-
 }
+
+.logoutButton {
+  background-color: red;
+  color: white;
+  justify-content: flex-end;
+}
+
 
 
 

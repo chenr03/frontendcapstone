@@ -1,23 +1,33 @@
 import React from 'react'
 import AllCourses from "../containers/AllCourses";
 import AddCourse from '../containers/AddCourse';
+import { useNavigate} from 'react-router-dom';
 // import {logout} from '../containers/Dashboard'
 // import {Button} from "@mui/material";
 
 // import {AllCourses} from './AllCourses'
 
 function Dashboard(props) {
-    // console.log('Props Dashboard Comp: ', props)
+    const navigate = useNavigate();
 
-    // const playerName = props.name
+    const logout = () => {
+
+        props.logout(null)
+        navigate('/login')
+        document.cookie = "loggedin=";
+        document.cookie = `token=`;
+    }
+
+    console.log('Button for Logout', props.user)
 
 
-    // const gameName = props.name
 return (
 
     <section className = "dashboardSection">
         <header className = "welcomeDashboard" style={{textAlign: 'center'}}>
             Welcome to Community Disc {props.user} !
+            { props.user !== null ? <button className="logoutButton" onClick={() => logout()}
+                     style={{color: 'white'}}>Logout</button> : null}
         </header>
         <div className = "dashboardHeader" style={{ flexDirection: 'row', textAlign: 'center', height: '100px' }}>
             <h1 className = "dashboardText">
@@ -41,7 +51,8 @@ return (
             </div>
 
          </div>
-            {/*<Button onClick={()=> props.logout()} to="/Logout" sx={{color: 'white'}}>Logout</Button>*/}
+
+
     </section>
 
 )}

@@ -66,6 +66,7 @@ function App() {
                     <Sidebar>
                          <Routes>
                             {/* Normal Routing Paths */}
+                            <Route path="/" element={<Home/>} />
                             <Route path="/home" element={<Home/>} />
                             <Route path="/about" element={<About/>} />
                             <Route path="/login" element={<Login/>} />
@@ -78,9 +79,10 @@ function App() {
                             <Route path="/courses" element={<AllCourses/>} />
                             <Route path="/course/:id" element={<Course/>} />
                             <Route path="/CourseDetails/:id" element={<CourseDetails />} />
-                            <Route path="/dashboard" element={<Dashboard/>} />
+
 
                             {/* Protected Routing Paths */}
+                            <Route path="/dashboard" element={<ProtectedRoute component={Dashboard} />} />
                             <Route path="/users" element={<ProtectedRoute component={Users} />} />
                             <Route path="/users/:id" element={<ProtectedRoute component={User} />} />
                             <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
