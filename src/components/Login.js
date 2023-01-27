@@ -39,7 +39,7 @@ const Login = (props) => {
         e.preventDefault();
         console.log('State: ', state)
 
-        fetch('http://localhost:8080/login', {
+        fetch('backend-capstone-myne6a5uq-chenr03.vercel.app/login', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
