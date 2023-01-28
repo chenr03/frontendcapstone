@@ -11,10 +11,7 @@ function Home() {
     return(
         <article className = "articleCircle">
             <div className = "circle">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+
                 <h1 className = "welcomeHeader"> Welcome to Community Disc </h1>
 
 
