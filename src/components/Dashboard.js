@@ -1,6 +1,8 @@
 import React from 'react'
 import AllCourses from "../containers/AllCourses";
 import AddCourse from '../containers/AddCourse';
+import AllGames from '../containers/AllGames';
+import AddGame from '../containers/AddGame'
 import { useNavigate} from 'react-router-dom';
 // import {logout} from '../containers/Dashboard'
 // import {Button} from "@mui/material";
@@ -40,13 +42,14 @@ return (
             </div>
             <div className = "coursesBox" style={{border: '5px solid white'}}>
 
-                <h4 className = "coursesBoxH4">  Courses  <AddCourse/>  Please click Button to Add New Course </h4>
-                <AllCourses style={{alignItems: 'center'}}/>
+                <h4 className = "coursesBoxH4">  Courses </h4>
+                <h5 className = "coursesBoxH5">  Please click Button to Add New Course </h5>
+               <p> <AddCourse/>  <AllCourses style={{alignItems: 'center'}}/> </p>
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
-                <h4 className = "gamesBoxH4"> Games </h4>
-                {/*/!*<AllGames>*!/ <AddGame/>*/}
+                <h4 className = "gamesBoxH4"> Games  </h4>
+                <p> <AddGame/> <AllGames/></p>
             </div>
 
          </div>

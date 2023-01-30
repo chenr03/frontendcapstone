@@ -90,6 +90,10 @@ td, th {
 
 }
 
+th {
+  text-decoration: none;
+}
+
 tr:nth-child(even) {
 
   font-size: 15px;
@@ -343,18 +347,26 @@ ul {
 
 .playersBoxH4 {
   text-align: center;
-  text-decoration: underline;
+  background-color: lightgray;
+  color: #343a40;
 }
 
 .coursesBoxH4 {
   text-align: center;
-  text-decoration: underline;
+  background-color: lightgray;
+  color: #343a40;
 
+}
+
+.coursesBoxH5 {
+  text-align: center;
+  margin: 5px;
 }
 
 .gamesBoxH4 {
   text-align: center;
-  text-decoration: underline;
+  background-color: lightgray;
+  color: #343a40;
 }
 
 .coursesTable {

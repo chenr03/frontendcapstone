@@ -49,9 +49,9 @@ const AllCourses = (props) => {
 
             <Container>
                 <Table className = "coursesTable">
-                    <TableHead>
+                    <TableHead style={{textDecoration: 'none'}}>
                         <TableRow>
-                            <TableCell style={{color: '#343a40', fontWeight: 'Bolder', fontSize: '20px', textDecoration: 'underline'}}>Name </TableCell>
+                            <TableCell style={{color: '#343a40', fontWeight: 'Bolder', fontSize: '20px'}}>Name </TableCell>
 
                             {
                                 props.online && (
@@ -75,7 +75,6 @@ const AllCourses = (props) => {
                                                 component="button"
                                                 variant="header1"
                                                 style={{ color: '#343a40'}}>
-                                                {/*{courses["courseName"] }*/}
                                                 {c.courseName}
                                             </Link>
                                         </Typography>
