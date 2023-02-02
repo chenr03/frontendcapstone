@@ -5,8 +5,9 @@ import { Container} from '@mui/material';
 
 const GameDetails = (props) => {
     let { gameId } = useParams();
-    console.log(id);
+    // console.log(id);
     const game = props.games.find(game => game.id === +gameId)
+
     const [games, setGames] = useState()
     console.log(games)
 
@@ -29,9 +30,10 @@ const GameDetails = (props) => {
 
     if(!games) return <div> Loading.... </div>
 
+
     return (
         <Container maxWidth="sm" className="gameContainer" style={{marginTop: '15%'}} >
-            <h1 style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {this.games.gameName}  </h1>
+            <h1 className = "gamesBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {this.games.gameName}  </h1>
 
         </Container>
     )

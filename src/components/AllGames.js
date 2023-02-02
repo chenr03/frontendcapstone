@@ -79,15 +79,14 @@ const AllGames = (props) => {
                                             </Link>
                                         </Typography>
                                     </TableCell>
-                                    {/*<TableCell  scope="row">{courses.description["description"]}</TableCell>*/}
-                                    {/*<TableCell  scope="row">{courses.address["address"]}</TableCell>*/}
-                                    {/*<TableCell  scope="row">{courses.hours["hours"]}</TableCell>*/}
+                                    {/*<TableCell  scope="row">{c.courseId.courseName["Course Name"]}</TableCell>*/}
+
                                     {
                                         props.online && (
                                             <TableCell>
                                                 <DeleteIcon
                                                     // add onClick method here
-                                                    onClick={() => props.removeGame(games.id)}
+                                                    onClick={() => props.removeGame(g.gameId)}
                                                     className="iconTextRed" />
                                             </TableCell>
                                         )

@@ -235,6 +235,14 @@ ul {
 
 }
 
+.gameListings {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
 .dashboardSection {
   width: 100vw;
   height: 25%;
@@ -389,6 +397,10 @@ ul {
 
 
 
+}
+
+.gamesBoxH1 {
+  border: 5px solid black;
 }
 
 
