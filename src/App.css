@@ -390,6 +390,22 @@ ul {
 
 }
 
+.addGameButton {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+
+
+}
+
+
+.addPlayerButton {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+
+
+}
 .logoutButton {
   background-color: #343a40;
   color: white;
@@ -403,13 +419,6 @@ ul {
   border: 5px solid black;
 }
 
-.addGameButton {
-  display: flex;
-  flex-direction: row;
-  margin-left: 50px;
-
-
-}
 
 
 

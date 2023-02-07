@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import AddPlayer from '../components/AddGame'
+import AddPlayer from '../components/AddPlayer'
 import { addPlayer } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {
-        games: state.games,
+        players: state.players,
         online: state.online
     }
 }

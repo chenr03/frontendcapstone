@@ -3,11 +3,10 @@ import AllCourses from "../containers/AllCourses";
 import AddCourse from '../containers/AddCourse';
 import AllGames from '../containers/AllGames';
 import AddGame from '../containers/AddGame'
+import AllPlayers from '../containers/AllPlayers';
+import AddPlayer from '../containers/AddPlayer'
 import { useNavigate} from 'react-router-dom';
-// import {logout} from '../containers/Dashboard'
-// import {Button} from "@mui/material";
 
-// import {AllCourses} from './AllCourses'
 
 function Dashboard(props) {
     const navigate = useNavigate();
@@ -35,11 +34,14 @@ return (
                 Dashboard
             </h1>
         </div>
+
         <div className = "allBoxes">
+
             <div className = "playersBox" style={{border: '5px solid white'}}>
                 <h4 className = "playersBoxH4"> Players  </h4>
-                {/*<AllPlayers> <AddPlayers/>*/}
+                <p> <AddPlayer/> <AllPlayers/>  </p>
             </div>
+
             <div className = "coursesBox" style={{border: '5px solid white'}}>
 
                 <h4 className = "coursesBoxH4">  Courses </h4>

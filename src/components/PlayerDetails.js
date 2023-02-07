@@ -32,27 +32,26 @@ const PlayerDetails = (props) => {
 
 
     return (
-        <Container maxWidth="sm" className="gameContainer" style={{marginTop: '15%'}} >
-            <h1 className = "gamesBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {players.playerName} </h1>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole1Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole2Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole3Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole4Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole5Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole6Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole7Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole8Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole9Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole10Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole11Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole12Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole13Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole14Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole15Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole16Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole17Score}</p>
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole18Score}</p>
-
+        <Container maxWidth="sm" className="playerContainer" style={{marginTop: '15%'}} >
+            <h1 className = "playersBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {players.playerName} </h1>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole1Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole2Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole3Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole4Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole5Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole6Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole7Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole8Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole9Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole10Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole11Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole12Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole13Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole14Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole15Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole16Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole17Score}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.hole18Score}</p>
 
         </Container>
     )

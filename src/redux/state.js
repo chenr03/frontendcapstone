@@ -30,13 +30,8 @@ const state = {
                         "id": 1,
                         "name": "Chris"
 
-                },
-
-                {
-                        "id": 1,
-                        "name": "Edward"
-
                 }
+
         ]
 }
 
