@@ -4,24 +4,24 @@ import { Container} from '@mui/material';
 
 
 const GameDetails = (props) => {
-    let { gameId } = useParams();
+    let { id } = useParams();
     // console.log(id);
-    const game = props.games.find(game => game.id === +gameId)
+    const game = props.games.find(game => game.id === +id)
 
-    const [games, setGames] = useState()
+    const [games, setGame] = useState()
     console.log(games)
 
     console.log('Games object', game);
 
     useEffect(() => {
         // Get all courses
-        fetch(`http://localhost:8080/game/${gameId}`)
+        fetch(`http://localhost:8080/game/${id}`)
             .then(response => {
                 console.log('All Games:', response)
                 return response.json()
             }).then((data) => {
             console.log('this game:', data)
-            setGames(data)
+            setGame(data)
         })
 
         // empty dependency array means this effect will only run once
@@ -33,7 +33,8 @@ const GameDetails = (props) => {
 
     return (
         <Container maxWidth="sm" className="gameContainer" style={{marginTop: '15%'}} >
-            <h1 className = "gamesBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {this.games.gameName}  </h1>
+            <h1 className = "gamesBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {games.gameName} </h1>
+            {/*<p className = "gamesBoxParagraph" style ={{textAlign: 'center'}}> {courses.courseName}</p>*/}
 
         </Container>
     )

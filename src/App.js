@@ -12,9 +12,11 @@ import Register from './components/Register';
 // import Logout from './components/Logout';
 
 // Player Components
-import AllPlayers  from './components/AllPlayers';
+import AllPlayers  from './containers/AllPlayers';
+import AddPlayer from './containers/AddPlayer';
+import PlayerDetails from './containers/PlayerDetails';
 import Player from './components/Player';
-import AddPlayer from './components/AddPlayer';
+
 
 // Game Components
 import AllGames  from './containers/AllGames';
@@ -29,7 +31,6 @@ import AddCourse from './containers/AddCourse';
 import CourseDetails from "./containers/CourseDetails";
 import Course from './components/Course';
 
-import FindCourse from './components/FindCourse';
 
 // User Components
 import Users from './components/Users';
@@ -81,8 +82,8 @@ function App() {
                             <Route path="/courses" element={<AllCourses/>} />
                             <Route path="/course/:id" element={<Course/>} />
                             <Route path="/CourseDetails/:id" element={<CourseDetails />} />
-                             <Route path="/GameDetails/:id" element={<GameDetails />} />
-
+                            <Route path="/GameDetails/:id" element={<GameDetails />} />
+                            <Route path="/PlayerDetails/:id" element={<PlayerDetails />} />
 
                             {/* Protected Routing Paths */}
                             <Route path="/dashboard" element={<ProtectedRoute component={Dashboard} />} />
@@ -91,7 +92,6 @@ function App() {
                             <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
                             <Route path="/AddGame" element={<ProtectedRoute component={AddGame} />} />
                             <Route path="/AddPlayer" element={<ProtectedRoute component={AddPlayer} />} />
-                            <Route path="/FindCourse" element={<ProtectedRoute component={FindCourse} />} />
 
 
                         </Routes>

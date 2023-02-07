@@ -56,7 +56,7 @@ const AllGames = (props) => {
                             {
                                 props.online && (
                                     <TableCell>
-                                        Delete
+                                        {props.games.delete} === Delete
                                     </TableCell>
                                 )
                             }

@@ -13,7 +13,7 @@ import {
 class AddGame extends Component {
     state = {
         open: false,
-        name: ''
+        gameName: ''
     }
 
 
@@ -26,31 +26,27 @@ class AddGame extends Component {
     }
 
     handleSubmit = (e) => {
-        console.log('this.state: ', this.state )
 
         e.preventDefault()
         const payload = { ...this.state }
         payload.id = this.props.games.length + 1
         delete payload.open
         console.log('payload', payload)
-        // console.log("THE Listing", payload)
-        // add this.props.addCar function here
-        // also add this.setState to close the dialog
-        // this.props.addCourse(payload)
+
         const setGame = {
-            // Post Course to Database
+            // Post GAME to Database
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'},
-            body: JSON.stringify({ gameName: this.state.gameName })
+            body: JSON.stringify({ gameName: this.state.name})
         };
 
-        console.log('this.state.name:', this.state.name);
+        // console.log('this.state.games:', this.state.games);
 
         fetch('http://localhost:8080/game/', setGame)
             .then(response => response.json())
             .then(data => this.setState({
-                gameName: ''
+                name: '',
             }))
         this.setState({ open: false })
     }
@@ -60,11 +56,12 @@ class AddGame extends Component {
 
         if (prevState.open !== this.state.open) {
             this.setState({
-                gameName: ''
+                name: ''
+
             })
 
         }
-        console.log('this.state.name:', this.state.name);
+        console.log('this.state.gameName:', this.state.name);
     }
 
 
@@ -90,9 +87,9 @@ class AddGame extends Component {
                                 onSubmit={this.handleSubmit}
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField
-                                    id="gameName"
-                                    placeholder=" Game Name"
-                                    value={this.state.gameName}
+                                    id="name"
+                                    placeholder=" Game Name "
+                                    value={this.state.name}
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />
@@ -106,4 +103,4 @@ class AddGame extends Component {
     }
 }
 
-export default AddGame;
+export default AddGame

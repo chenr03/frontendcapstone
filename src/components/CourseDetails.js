@@ -5,7 +5,7 @@ import Map from '../components/Map'
 
 const CourseDetails = (props) => {
     let { id } = useParams();
-    console.log(id);
+
     const course = props.courses.find(course => course.id === +id)
     const [courses, setCourses] = useState()
     console.log(courses)
@@ -34,8 +34,28 @@ const CourseDetails = (props) => {
             <h1 style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {courses.courseName}  </h1>
             {/*<h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.address}</h2>*/}
             {/*<h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.hours}</h2>*/}
-            <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.courseDescription}</p>
+            <h2 style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.courseDescription}</h2>
             <Map name={courses.courseName} address={courses.address} style={{ borderColor: '5px solid white', textAlign: 'center' }}/>
+            <article>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole1}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole2}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole3}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole4}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole5}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole6}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole7}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole8}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole9}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole10}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole11}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole12}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole13}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole14}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole15}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole16}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole17}</p>
+                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole18}</p>
+            </article>
         </Container>
     )
 }
