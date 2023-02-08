@@ -38,15 +38,15 @@ class AddGame extends Component {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'},
-            body: JSON.stringify({ gameName: this.state.name})
+            body: JSON.stringify({ gameName: this.state.gameName})
         };
 
-        // console.log('this.state.games:', this.state.games);
+        console.log('this.state.games:', this.state.games);
 
         fetch('http://localhost:8080/game/', setGame)
             .then(response => response.json())
             .then(data => this.setState({
-                name: '',
+                gameName: '',
             }))
         this.setState({ open: false })
     }
@@ -56,12 +56,12 @@ class AddGame extends Component {
 
         if (prevState.open !== this.state.open) {
             this.setState({
-                name: ''
+                gameName: ''
 
             })
 
         }
-        console.log('this.state.gameName:', this.state.name);
+        console.log('this.state.gameName:', this.state.gameName);
     }
 
 
@@ -87,9 +87,9 @@ class AddGame extends Component {
                                 onSubmit={this.handleSubmit}
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField
-                                    id="name"
+                                    id="gameName"
                                     placeholder=" Game Name "
-                                    value={this.state.name}
+                                    value={this.state.gameName}
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />

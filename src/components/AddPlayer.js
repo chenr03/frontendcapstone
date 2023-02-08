@@ -13,7 +13,8 @@ import {
 class AddPlayer extends Component {
     state = {
         open: false,
-        playerName: ''
+        playerName: '',
+        description: ''
     }
 
 
@@ -38,7 +39,7 @@ class AddPlayer extends Component {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'},
-            body: JSON.stringify({ playerName: this.state.name})
+            body: JSON.stringify({ playerName: this.state.name, playerDescription: this.state.playerDescription})
         };
 
         // console.log('this.state.games:', this.state.games);
@@ -47,6 +48,7 @@ class AddPlayer extends Component {
             .then(response => response.json())
             .then(data => this.setState({
                 name: '',
+                playerDescription: '',
             }))
         this.setState({ open: false })
     }
@@ -56,7 +58,8 @@ class AddPlayer extends Component {
 
         if (prevState.open !== this.state.open) {
             this.setState({
-                name: ''
+                name: '',
+                playerDescription: '',
 
             })
 
@@ -75,7 +78,7 @@ class AddPlayer extends Component {
                         onClick={this.toggleDialog}
                         style={{ background: 'green', fontSize: '20px', marginTop: '15px' }}
                     >
-                        New Player
+                       Add Player
                     </Button>
 
                 </div>
@@ -90,6 +93,12 @@ class AddPlayer extends Component {
                                     id="name"
                                     placeholder=" Player Name "
                                     value={this.state.name}
+                                    onChange={this.handleTextChange}
+                                    required />
+                                <TextField
+                                    id="playerDescription"
+                                    placeholder=" Player Age "
+                                    value={this.state.playerDescription}
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />

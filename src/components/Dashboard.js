@@ -39,23 +39,27 @@ return (
 
             <div className = "playersBox" style={{border: '5px solid white'}}>
                 <h4 className = "playersBoxH4"> Players  </h4>
-                <p> <AddPlayer/> <AllPlayers/>  </p>
+                <h5 className = "playersBoxH5">  Click Button to Add New Player </h5>
+                <p> <AddPlayer/> <AllPlayers style={{alignItems: 'center'}}/>  </p>
             </div>
 
             <div className = "coursesBox" style={{border: '5px solid white'}}>
 
                 <h4 className = "coursesBoxH4">  Courses </h4>
-                <h5 className = "coursesBoxH5">  Please click Button to Add New Course </h5>
-               <p> <AddCourse/>  <AllCourses style={{alignItems: 'center'}}/> </p>
+                <h5 className = "coursesBoxH5">  Click Button to Add New Course </h5>
+                <p> <AddCourse/>  <AllCourses style={{alignItems: 'center'}}/> </p>
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
                 <h4 className = "gamesBoxH4"> Games  </h4>
-                <p> <AddGame/> <AllGames/></p>
+                <h5 className = "gamesBoxH5">  Click Button to Add New Game </h5>
+                <p> <AddGame/> <AllGames style={{alignItems: 'center'}}/></p>
             </div>
-
          </div>
 
+        <div className = "playTheGameBox" style={{border: '5px solid white'}}>
+            <h4 className = "playTheGameBoxH4"> Let's Play Disc Golf </h4>
+        </div>
 
     </section>
 
@@ -63,3 +67,25 @@ return (
 
 
 export default Dashboard;
+
+
+/* These are for the last Dashboard Box that keeps track of all the scores */
+
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole1Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole2Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole3Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole4Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole5Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole6Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole7Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole8Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole9Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole10Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole11Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole12Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole13Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole14Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole15Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole16Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole17Score}</p>*/
+/*<p className = 'playerScores' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.Hole18Score}</p>*/
