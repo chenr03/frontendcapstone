@@ -38,7 +38,7 @@ class AddGame extends Component {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'},
-            body: JSON.stringify({ gameName: this.state.gameName})
+            body: JSON.stringify({ gameName: this.state.name})
         };
 
         console.log('this.state.games:', this.state.games);
@@ -46,7 +46,7 @@ class AddGame extends Component {
         fetch('http://localhost:8080/game/', setGame)
             .then(response => response.json())
             .then(data => this.setState({
-                gameName: '',
+                name: '',
             }))
         this.setState({ open: false })
     }
@@ -56,12 +56,12 @@ class AddGame extends Component {
 
         if (prevState.open !== this.state.open) {
             this.setState({
-                gameName: ''
+                name: ''
 
             })
 
         }
-        console.log('this.state.gameName:', this.state.gameName);
+        console.log('this.state.gameName:', this.state.name);
     }
 
 
@@ -71,7 +71,7 @@ class AddGame extends Component {
                 <div className = "addGameButton">
                     <Button
                         variant="contained"
-                        className="addGame"
+                        className="addNewGame"
                         onClick={this.toggleDialog}
                         style={{ background: 'green', fontSize: '20px', marginTop: '15px' }}
                     >
@@ -82,14 +82,14 @@ class AddGame extends Component {
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
                         <DialogTitle style={{textAlign: 'center'}}>Add New Game </DialogTitle>
-                        <DialogContent sx={{display: 'flex', justifyContent: 'center'}}>
+                        <DialogContent style={{display: 'flex', justifyContent: 'center'}}>
                             <form
                                 onSubmit={this.handleSubmit}
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField
-                                    id="gameName"
+                                    id="name"
                                     placeholder=" Game Name "
-                                    value={this.state.gameName}
+                                    value={this.state.name}
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />

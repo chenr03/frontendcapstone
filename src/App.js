@@ -43,7 +43,7 @@ import cookie from 'cookie';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
-
+// Authorization Function
 const checkAuth = () => {
     const cookies = cookie.parse(document.cookie);
     return !!cookies['loggedin']
@@ -51,7 +51,7 @@ const checkAuth = () => {
 };
 
 
-
+// Protected Route Function
 const ProtectedRoute = (props) => {
     const {component: Component} = props
     return checkAuth() === true ? <Component /> : <Navigate to='/home'></Navigate>;

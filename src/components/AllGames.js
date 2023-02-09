@@ -26,7 +26,7 @@ const AllGames = (props) => {
 
     useEffect(() => {
         // Get all courses
-        fetch(`http://localhost:8080/Games/`)
+        fetch(`http://localhost:8080/games/`)
             .then(response => {
                 console.log('All Games:', response)
                 return response.json()
@@ -55,9 +55,8 @@ const AllGames = (props) => {
 
                             {
                                 props.online && (
-                                    <TableCell>
-                                        {props.games.delete} === Delete
-                                    </TableCell>
+                                    <TableCell delete = {props.games.delete}
+                                    />
                                 )
                             }
 
