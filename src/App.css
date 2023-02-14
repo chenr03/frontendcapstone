@@ -20,57 +20,63 @@
 body {
   background-image: url("Golf.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  /*object-fit: contain;*/
+  /*height: 100vh;*/
+  /*width: 3000px;*/
+  background-repeat: round;
+  position: fixed;
+  object-fit: cover;
 
 
 }
 
-.circle {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 50vh;
-  width: 50vh;
-  justify-content: center;
-  color: whitesmoke;
-  text-shadow: 4px 4px 5px #000000;
-  border-radius: 50% / 50%;
+.articleCircle {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 300px;
+  height: 600px;
+  width: 600px;
+  align-items: center;
+  background-color: #343a40;
   border: 5px double white;
-  background: #343a40;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 50%;
+  text-shadow: 4px 4px 5px #000000;
+
+}
+
+.circle {
+  display: inline-block;
+  vertical-align: middle;
 
 
 }
 
 
 .welcomeHeader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 600px;
+  /*transform: translate(-50%, -50%);*/
   text-align: center;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  margin-top: 175px;
   font-size: 3em;
 }
 
-.golfFlagLogo {
-  position: absolute;
-  left: 75%;
-  top: 50%;
-  transform: translate(-50%, 50%)
-}
+/*.golfFlagLogo {*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  top: 50%;*/
+/*  transform: translate(-50%, 50%)*/
+/*}*/
 
 
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  margin-top: 10%;
-  width: 75% !important;
+  margin-top: 54px;
   vertical-align: central;
   justify-content: center;
   background-color: antiquewhite;
@@ -235,13 +241,22 @@ ul {
 
 }
 
-.gameListings {
-  width: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
+/*.gameListings {*/
+/*  width: 50%;*/
+/*  text-align: center;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  justify-items: center;*/
+/*}*/
+
+/*.playerListings {*/
+/*  width: 50%;*/
+/*  text-align: center;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  justify-items: center;*/
+
+/*}*/
 
 .dashboardSection {
   width: 100vw;

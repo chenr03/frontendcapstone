@@ -13,7 +13,7 @@ import {
 class AddGame extends Component {
     state = {
         open: false,
-        gameName: ''
+        gameName: '',
     }
 
 
@@ -41,12 +41,11 @@ class AddGame extends Component {
             body: JSON.stringify({ gameName: this.state.name})
         };
 
-        console.log('this.state.games:', this.state.games);
 
         fetch('http://localhost:8080/game/', setGame)
             .then(response => response.json())
             .then(data => this.setState({
-                name: '',
+                name: ''
             }))
         this.setState({ open: false })
     }
@@ -56,12 +55,12 @@ class AddGame extends Component {
 
         if (prevState.open !== this.state.open) {
             this.setState({
-                name: ''
+                name: '',
 
             })
 
         }
-        console.log('this.state.gameName:', this.state.name);
+        console.log('gameName:', this.state.name);
     }
 
 

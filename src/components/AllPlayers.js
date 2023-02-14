@@ -40,7 +40,7 @@ const AllPlayers = (props) => {
 
 
     return (
-        <div className="playerListings">
+        <div className="main-listings">
             {props.online && (
                 <AddPlayer
                     players = {props.players}

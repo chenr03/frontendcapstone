@@ -19,7 +19,7 @@ const state = {
         games: [
                 {
                         "id": 1,
-                        "gameName": "Friday Night Lights"
+                        "name": "Friday Night Lights"
 
                 }
         ],
