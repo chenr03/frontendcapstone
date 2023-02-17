@@ -21,7 +21,7 @@ function Course(){
         })
 
         // empty dependency array means this effect will only run once
-    }, []);
+    }, [params.id]);
 
 
 

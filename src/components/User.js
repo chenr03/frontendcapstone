@@ -21,7 +21,7 @@ function User(){
         })
 
         // empty dependency array means this effect will only run once
-    }, []);
+    }, [params.id]);
 
 
 

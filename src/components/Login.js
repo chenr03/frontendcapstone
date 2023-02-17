@@ -70,7 +70,7 @@ const Login = (props) => {
     useEffect(()=>{
         console.log('redux props useEffect', props)
 
-    }, [])
+    }, [props])
 
     //props.user.username
 
