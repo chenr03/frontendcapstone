@@ -25,14 +25,14 @@ const PlayerDetails = (props) => {
         })
 
         // empty dependency array means this effect will only run once
-    }, []);
+    }, [id]);
 
 
     if(!players) return <div> Loading.... </div>
 
 
     return (
-        <Container maxWidth="sm" className="playerContainer" style={{marginTop: '15%'}} >
+        <Container maxWidth="sm" className="playerContainer" style={{marginTop: '10%'}} >
             <h1 className = "playersBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {players.playerName} </h1>
                 <p className = 'playerDescription' style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{players.playerDescription}</p>
 

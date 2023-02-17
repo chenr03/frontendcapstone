@@ -24,37 +24,20 @@ const CourseDetails = (props) => {
             })
 
             // empty dependency array means this effect will only run once
-        }, []);
+        }, [id]);
 
 
         if(!courses) return <div> Loading.... </div>
 
     return (
         <Container maxWidth="sm" className="list-container" style={{marginTop: '15%'}} >
-            <h1 style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {courses.courseName}  </h1>
-            {/*<h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.address}</h2>*/}
-            {/*<h2 style={{backgroundColor: '#343a40', color: 'white'}}> {courses.hours}</h2>*/}
-            <h2 style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.courseDescription}</h2>
+            <h1 style={{ marginLeft: '5px', textAlign: 'center', width: '23vw', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {courses.courseName}  </h1>
+            {/*<h2 style={{backgroundColor: 'b343a40', color: 'white'}}> {courses.address}</h2>*/}
+            {/*<h2 style={{backgroundColor: 'b343a40', color: 'white'}}> {courses.hours}</h2>*/}
+            <h2 style={{ textAlign: 'center', width: '23vw', marginLeft: '5px', backgroundColor: '#343a40', color: 'white'}}>{courses.courseDescription}</h2>
             <Map name={courses.courseName} address={courses.address} style={{ borderColor: '5px solid white', textAlign: 'center' }}/>
             <article>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole1}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole2}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole3}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole4}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole5}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole6}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole7}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole8}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole9}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole10}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole11}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole12}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole13}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole14}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole15}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole16}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole17}</p>
-                <p style={{ textAlign: 'center', backgroundColor: '#343a40', color: 'white' }}>{courses.Hole18}</p>
+
             </article>
         </Container>
     )

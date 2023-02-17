@@ -25,7 +25,7 @@ const GameDetails = (props) => {
         })
 
         // empty dependency array means this effect will only run once
-    }, []);
+    }, [id]);
 
 
     if(!games) return <div> Loading.... </div>
@@ -34,7 +34,8 @@ const GameDetails = (props) => {
     return (
         <Container maxWidth="sm" className="gameContainer" style={{marginTop: '15%'}} >
             <h1 className = "gamesBoxH1" style={{textAlign: 'center', backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {games.gameName} </h1>
-            {/*<p className = "gamesBoxParagraph" style ={{textAlign: 'center'}}> {courses.courseName}</p>*/}
+            <p className = "gamesBoxH1" style={{height: '50px', width: '100vw', padding: '5px', textAlign: 'center', display: "table-cell", verticalAlign: "center", backgroundColor: '#343a40', color: 'white', border: '2px solid white'}}> {games.gameDate} </p>
+
 
         </Container>
     )

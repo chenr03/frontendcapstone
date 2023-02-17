@@ -27,6 +27,7 @@ body {
   object-fit: cover;
 
 
+
 }
 
 .articleCircle {
@@ -76,7 +77,7 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  margin-top: 54px;
+  margin-top: 53px;
   vertical-align: central;
   justify-content: center;
   background-color: antiquewhite;
@@ -94,6 +95,10 @@ td, th {
 
 
 
+}
+
+.tableHeadScores {
+  margin:0;
 }
 
 th {
@@ -241,6 +246,15 @@ ul {
 
 }
 
+.scores-listings{
+  width: 25%;
+  margin-bottom: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
 /*.gameListings {*/
 /*  width: 50%;*/
 /*  text-align: center;*/
@@ -335,9 +349,9 @@ ul {
 
 .allBoxes {
   display: flex;
-  height: 700px;
-  margin: 1%;
-  padding: 1%;
+  height: 600px;
+  /*margin: 1%;*/
+  padding: 10px;
 
 }
 
@@ -370,9 +384,10 @@ ul {
 
 .playTheGameBox {
   display: flex;
-  margin-left: 60px;
-  width: 95.1%;
-  height: 90%;
+  flex-direction: column;
+  margin-left: 1%;
+  width: 98%;
+  height: 350px;
   background-color: #343a40;
   border: 5px solid black;
   margin-bottom: 20px;
@@ -388,6 +403,11 @@ ul {
   color: #343a40;
 }
 
+
+
+.addScoreButton {
+  margin-left: 85%;
+}
 
 .playersBoxH4 {
   text-align: center;
@@ -441,6 +461,13 @@ ul {
   margin-bottom: 50px;
 }
 
+.scoresTable {
+  margin-left: 25px;
+}
+
+.playGamePTag {
+  margin: 0;
+}
 
 
 .addCourseButton {

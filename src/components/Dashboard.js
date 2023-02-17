@@ -1,10 +1,17 @@
 import React from 'react'
+//Course
 import AllCourses from "../containers/AllCourses";
 import AddCourse from '../containers/AddCourse';
+//Games Tables
 import AllGames from '../containers/AllGames';
-import AddGame from '../containers/AddGame'
+import AddGame from '../containers/AddGame';
+// Players Table
 import AllPlayers from '../containers/AllPlayers';
-import AddPlayer from '../containers/AddPlayer'
+import AddPlayer from '../containers/AddPlayer';
+// Scores Table
+import AllScores from "../containers/AllScores";
+import AddScore from '../containers/AddScore';
+// Navigation
 import { useNavigate} from 'react-router-dom';
 
 
@@ -58,7 +65,10 @@ return (
          </div>
 
         <div className = "playTheGameBox" style={{border: '5px solid white'}}>
-            <h4 className = "playTheGameBoxH4"> Let's Play Disc Golf </h4>
+            <h4 className = "playTheGameBoxH4"> Play Game  <AllScores/> </h4>
+            <h1> <AddScore/>   </h1>
+
+
         </div>
 
 

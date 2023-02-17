@@ -47,6 +47,20 @@ const players = (state = [], action) => {
     return state
 }
 
+const scores = (state = [], action) => {
+    // eslint-disable-next-line
+    switch (action.type) {
+        case 'ADD_SCORE':
+            return [...state, action.value]
+
+        case 'REMOVE_SCORE':
+            const newScore = state.filter((score) => {
+                return score.id !== action.value
+            })
+            return newScore
+    }
+    return state
+}
 
 
 const user = (state = null, action) => {
@@ -70,4 +84,4 @@ const user = (state = null, action) => {
 
 }
 
-export default combineReducers({ user, courses, games, players } )
+export default combineReducers({ user, courses, games, players, scores } )

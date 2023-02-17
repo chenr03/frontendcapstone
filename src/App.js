@@ -9,7 +9,13 @@ import Dashboard from './containers/Dashboard';
 // Auth Components
 import Login from './containers/Login';
 import Register from './components/Register';
-// import Logout from './components/Logout';
+
+
+// Score Components
+import AllScores from './containers/AllScores';
+import AddScore from './containers/AddScore';
+import ScoreDetails from './containers/ScoreDetails';
+
 
 // Player Components
 import AllPlayers  from './containers/AllPlayers';
@@ -35,6 +41,8 @@ import Course from './components/Course';
 // User Components
 import Users from './components/Users';
 import User from './components/User';
+
+
 
 // App Components
 import { Provider } from 'react-redux';
@@ -75,6 +83,7 @@ function App() {
                             <Route path="/about" element={<About/>} />
                             <Route path="/login" element={<Login/>} />
                             <Route path="/register" element={<Register/>} />
+                            <Route path="/scores" element={<AllScores/>} />
                             <Route path="/players" element={<AllPlayers/>} />
                             <Route path="/player/:id" element={<Player/>} />
                             <Route path="/games" element={<AllGames/>} />
@@ -84,6 +93,7 @@ function App() {
                             <Route path="/CourseDetails/:id" element={<CourseDetails />} />
                             <Route path="/GameDetails/:id" element={<GameDetails />} />
                             <Route path="/PlayerDetails/:id" element={<PlayerDetails />} />
+                            <Route path="/ScoreDetails/:id" element={<ScoreDetails />} />
 
                             {/* Protected Routing Paths */}
                             <Route path="/dashboard" element={<ProtectedRoute component={Dashboard} />} />
@@ -92,6 +102,7 @@ function App() {
                             <Route path="/AddCourse" element={<ProtectedRoute component={AddCourse} />} />
                             <Route path="/AddGame" element={<ProtectedRoute component={AddGame} />} />
                             <Route path="/AddPlayer" element={<ProtectedRoute component={AddPlayer} />} />
+                            <Route path="/AddScore" element={<ProtectedRoute component={AddScore} />} />
 
 
                         </Routes>

@@ -55,6 +55,20 @@ export const removePlayer = (id) => {
     }
 }
 
+export const addScore = (score) => {
+    return {
+        type: 'ADD_SCORE',
+        value: score
+    }
+}
+
+export const removeScore = (id) => {
+    return {
+        type: 'REMOVE_SCORE',
+        value: id
+    }
+}
+
 
 export const register = () => {
     return {
