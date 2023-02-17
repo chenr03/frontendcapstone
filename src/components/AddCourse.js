@@ -77,7 +77,7 @@ class AddCourse extends Component {
                         onClick={this.toggleDialog}
                         style={{ background: 'green', fontSize: '20px', marginTop: '15px' }}
                     >
-                      Add Course
+                      Select Course
                     </Button>
 
                 </div>

@@ -46,26 +46,23 @@ return (
 
             <div className = "playersBox" style={{border: '5px solid white'}}>
                 <h4 className = "playersBoxH4"> Players  </h4>
-                <h5 className = "playersBoxH5">  Click Button to Add New Player </h5>
                 <p> <AddPlayer/> <AllPlayers style={{alignItems: 'center'}}/>  </p>
             </div>
 
             <div className = "coursesBox" style={{border: '5px solid white'}}>
 
                 <h4 className = "coursesBoxH4">  Courses </h4>
-                <h5 className = "coursesBoxH5">  Click Button to Add New Course </h5>
                 <p> <AddCourse/>  <AllCourses style={{alignItems: 'center'}}/> </p>
 
             </div>
             <div className = "gamesBox" style={{border: '5px solid white'}}>
                 <h4 className = "gamesBoxH4"> Games  </h4>
-                <h5 className = "gamesBoxH5">  Click Button to Add New Game </h5>
                 <p> <AddGame/> <AllGames style={{alignItems: 'center'}}/></p>
             </div>
          </div>
 
         <div className = "playTheGameBox" style={{border: '5px solid white'}}>
-            <h4 className = "playTheGameBoxH4"> Play Game  <AllScores/> </h4>
+            <h4 className = "playTheGameBoxH4"> Keep Score  <AllScores/> </h4>
             <h1> <AddScore/>   </h1>
 
 

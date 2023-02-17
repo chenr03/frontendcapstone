@@ -152,7 +152,7 @@ class AddScore extends Component {
                         onClick={this.toggleDialog}
                         style={{ background: 'green', fontSize: '20px', marginTop: '5px' }}
                     >
-                        Add Scores
+                        Final Scores
                     </Button>
 
                 </div>
@@ -165,7 +165,7 @@ class AddScore extends Component {
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField
                                     id="name"
-                                    placeholder=" Player Name "
+                                    placeholder=" Players' Names "
                                     value={this.state.name}
                                     onChange={this.handleTextChange}
                                     required />

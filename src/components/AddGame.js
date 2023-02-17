@@ -76,7 +76,7 @@ class AddGame extends Component {
                         onClick={this.toggleDialog}
                         style={{ background: 'green', fontSize: '20px', marginTop: '15px' }}
                     >
-                        New Game
+                        Select Game
                     </Button>
 
                 </div>
