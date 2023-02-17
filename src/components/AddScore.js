@@ -13,7 +13,9 @@ import {
 class AddScore extends Component {
     state = {
         open: false,
-        name: '',
+        playerScoreName: '', // playerName
+        // courseScoreName: '', //course
+        // gameScoreName: '', // game
         hole1Score: '',
         hole2Score: '',
         hole3Score: '',
@@ -60,7 +62,9 @@ class AddScore extends Component {
                 'Content-Type': 'application/json'},
             body: JSON.stringify({
 
-                playerScoreName: this.state.name,
+                playerScoreName: this.state.playerScoreName,
+                // playerCourseName: this.state.playerCourseName,
+                // playerGameName: this.state.playerGameName,
                 Hole1Score: this.state.Hole1Score,
                 Hole2Score: this.state.Hole2Score,
                 Hole3Score: this.state.Hole3Score,
@@ -87,7 +91,9 @@ class AddScore extends Component {
         fetch('http://localhost:8080/score/', setScore)
             .then(response => response.json())
             .then(data => this.setState({
-                name: this.state.name,
+                playerScoreName: this.state.playerScoreName,
+                // playerCourseName: this.state.playerCourseName,
+                // playerGameName: this.state.playerGameName,
                 Hole1Score: this.state.Hole1Score,
                 Hole2Score: this.state.Hole2Score,
                 Hole3Score: this.state.Hole3Score,
@@ -115,7 +121,9 @@ class AddScore extends Component {
 
         if (prevState.open !== this.state.open) {
             this.setState({
-                name: this.state.name,
+                playerScoreName: this.state.playerScoreName,
+                // playerCourseName: this.state.playerCourseName,
+                // playerGameName: this.state.playerGameName,
                 Hole1Score: this.state.Hole1Score,
                 Hole2Score: this.state.Hole2Score,
                 Hole3Score: this.state.Hole3Score,
@@ -164,11 +172,23 @@ class AddScore extends Component {
                                 onSubmit={this.handleSubmit}
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField
-                                    id="name"
-                                    placeholder=" Players' Names "
-                                    value={this.state.name}
+                                    id="playerScoreName"
+                                    placeholder=" Player Name - Course Name - Game Name  "
+                                    value={this.state.playerScoreName}
                                     onChange={this.handleTextChange}
                                     required />
+                                {/*<TextField*/}
+                                {/*    id="playerCourseName"*/}
+                                {/*    placeholder=" Course Name "*/}
+                                {/*    value={this.state.playerCourseName}*/}
+                                {/*    onChange={this.handleTextChange}*/}
+                                {/*    required />*/}
+                                {/*<TextField*/}
+                                {/*    id="playerGameName"*/}
+                                {/*    placeholder=" Game Name "*/}
+                                {/*    value={this.state.playerGameName}*/}
+                                {/*    onChange={this.handleTextChange}*/}
+                                {/*    required />*/}
                                 <TextField
                                     id="Hole1Score"
                                     placeholder="Hole 1"

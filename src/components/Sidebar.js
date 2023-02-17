@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaBars, FaPeopleArrows, FaPager, FaHome, FaGrinStars }from "react-icons/fa";
-import { GiDiscGolfBasket, GiFrisbee, GiEyeTarget} from "react-icons/gi";
+import {FaBars, FaPager, FaHome, FaGrinStars} from "react-icons/fa";
+
 
 
 
@@ -22,31 +22,6 @@ const Sidebar = ({children}) => {
             path: "/about",
             name: "About",
             icon:<FaPager/>
-        },
-
-        {
-            path: "/players",
-            name: "Players",
-            icon:<FaPeopleArrows/>
-        },
-
-        {
-            path: "/games",
-            name: "Games",
-            icon:<GiFrisbee/>
-
-        },
-
-        {
-            path: "/courses",
-            name: "Courses",
-            icon:<GiDiscGolfBasket/>
-        },
-
-        {
-            path: "/scores",
-            name: "Scores",
-            icon:<GiEyeTarget/>
         },
 
         {

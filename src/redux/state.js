@@ -37,8 +37,8 @@ const state = {
 
         scores: [
                 {
-                        "id": 1,
-                        "name": " ",
+                        "id": 1
+
 
 
                 }

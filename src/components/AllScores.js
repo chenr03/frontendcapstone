@@ -66,7 +66,7 @@ const AllScores = (props) => {
                     <TableBody>
 
                         {scores.map((s, idx) => {
-                            return( <TableRow key={s.scoreId}>
+                            return ( <TableRow key={s.scoreId}>
                                     <TableCell  scope="row" style={{color: 'white'}}>
                                         <Typography>
                                             <Link
@@ -75,6 +75,8 @@ const AllScores = (props) => {
                                                 variant="header1"
                                                 style={{ color: '#343a40'}}>
                                                 {s.playerScoreName}
+                                                {/*{s.playerCourseName}*/}
+                                                {/*{s.playerGameName}*/}
                                             </Link>
                                         </Typography>
                                     </TableCell>
@@ -85,7 +87,7 @@ const AllScores = (props) => {
                                             <TableCell>
                                                 <DeleteIcon
                                                     // add onClick method here
-                                                    onClick={() => props.removeGame(s.scoreId)}
+                                                    onClick={() => props.removeScore(s.scoreId)}
                                                     className="iconTextRed" />
                                             </TableCell>
                                         )
