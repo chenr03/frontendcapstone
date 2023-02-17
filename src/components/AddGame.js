@@ -95,7 +95,7 @@ class AddGame extends Component {
                                     required />
                                 <TextField
                                     id="date"
-                                    placeholder=" Date "
+                                    placeholder=" Today's Date "
                                     value={this.state.date}
                                     onChange={this.handleTextChange}
                                     required />

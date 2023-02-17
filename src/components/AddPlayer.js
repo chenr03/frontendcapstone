@@ -97,7 +97,7 @@ class AddPlayer extends Component {
                                     required />
                                 <TextField
                                     id="playerDescription"
-                                    placeholder=" Player Age "
+                                    placeholder=" Description: Height, Weight, Age, etc. "
                                     value={this.state.playerDescription}
                                     onChange={this.handleTextChange}
                                     required />

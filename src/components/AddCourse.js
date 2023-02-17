@@ -90,13 +90,13 @@ class AddCourse extends Component {
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
                                 <TextField
                                     id="name"
-                                    placeholder="Name"
+                                    placeholder="Course Name"
                                     value={this.state.name}
                                     onChange={this.handleTextChange}
                                     required />
                                 <TextField
                                     id="description"
-                                    placeholder="Description"
+                                    placeholder="Size of Course"
                                     value={this.state.description}
                                     onChange={this.handleTextChange}
                                     required />
